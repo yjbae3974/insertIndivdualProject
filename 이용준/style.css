@@ -1,1 +1,124 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0px;
+  height: auto;
+  background-color: #E9ECF1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40px 90px;
+      grid-template-rows: 40px 90px;
+  width: 100%;
+  height: 130px;
+  position: fixed;
+}
+
+.nav1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  background-color: #2B4365;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+}
+
+.nav1 .nav1left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 50px;
+}
+
+.nav1 .nav1left .nav-link-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: #556984 1px solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav1 .nav1left .nav-link-left:nth-child(1) {
+  border-left: #556984 1px solid;
+}
+
+.nav1 .nav1right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 50px;
+}
+
+.nav1 .nav1right .nav-link-right {
+  color: white;
+  background-color: #0174B7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: solid 1px #556984;
+}
+
+.nav1 .nav1right .nav-link-right:nth-child(1) {
+  border-left: solid 1px #556984;
+}
+
+.nav2 {
+  height: 90px;
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav2 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav2 .menu .menuitems {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav2 .etc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav2 .etc .etcitems {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */
