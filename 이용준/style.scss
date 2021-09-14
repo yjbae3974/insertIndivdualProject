@@ -14,6 +14,25 @@ a{
     height: 130px;
     position: fixed;
 }
+.inactiveheader{
+    display: none;
+}
+.inactivemobileheader{
+    display: none;
+}
+.mobileheader{
+    width: 100%;
+    position: fixed;
+    height: 55px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mhi{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
 .activeheader{
     display: grid;
     grid-template-rows: 40px 400px;
