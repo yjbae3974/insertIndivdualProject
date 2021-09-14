@@ -1,26 +1,41 @@
 .main {
   margin: 20% 10%;
-  background-color: aliceblue;
+  background-color: #e8d1f8;
   text-align: center;
   border-radius: 15px;
 }
 
-.main h3 {
+.main h1 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-img {
+.main img {
   width: 50%;
   height: 50%;
+  border-radius: 20px;
 }
 
-p {
-  margin-left: 30%;
-  margin-right: 30%;
+.main p {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 20px;
 }
 
-#start {
-  margin-bottom: 10px;
+.main #start {
+  width: 30%;
+  height: 15%;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.main #start:hover {
+  background-color: rgba(139, 93, 128, 0.671);
+  color: white;
+}
+
+.main #start:focus {
+  background-color: #353333;
 }
 /*# sourceMappingURL=main.css.map */
