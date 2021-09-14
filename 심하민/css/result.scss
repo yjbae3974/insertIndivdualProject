@@ -1,0 +1,22 @@
+.result{
+    background-color: beige;
+    border-radius: 25px;
+    height: 80%;
+    margin: 20% 5%;
+    text-align: center;
+    h1{
+        padding-top: 5%;
+    }
+    img{
+        width: 50%;
+        height: 50%;
+    }
+    .resultname{
+        padding: 5% 5%;
+        font-size: 20px;
+    }
+    .resultDescription{
+        padding: 10% 10%;
+        font-size: 15px;
+    }
+}

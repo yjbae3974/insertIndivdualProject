@@ -4,6 +4,7 @@ body{
     background-color: #E9ECF1;
 }
 a{
+    color: inherit;
     text-decoration: none;
 }
 .header{
@@ -11,6 +12,32 @@ a{
     grid-template-rows: 40px 90px;
     width: 100%;
     height: 130px;
+    position: fixed;
+}
+.inactiveheader{
+    display: none;
+}
+.inactivemobileheader{
+    display: none;
+}
+.mobileheader{
+    width: 100%;
+    position: fixed;
+    height: 55px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mhi{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+.activeheader{
+    display: grid;
+    grid-template-rows: 40px 400px;
+    width: 100%;
+    height: 440px;
     position: fixed;
 }
 .nav1{
@@ -55,27 +82,71 @@ a{
     }
 }
 .nav2{
-    height: 90px;
-    width: 100%;
     background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .menu{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 90px 0px;
+    .mainmenu{
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .menuitems{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .etc{
+            &:nth-child(1){
+                padding-right: 40px;
+            }
+        }
+    }
+}
+.activenav2{
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 90px 0px;
+    .mainmenu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         .menuitems{
             padding-left: 20px;
             padding-right: 20px;
         }
     }
-    .etc{
-        display: flex;
-        .etcitems{
-            padding-left: 10px;
-            padding-right: 10px;
+}
+.submenu{
+    display: none;
+}
+.activesubmenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 310px;
+    .logosizer{
+        width: 214px;
+    }
+    .submenuitemcontainer{
+        width: 550.453px;
+        display: grid;
+        grid-template-columns: repeat(5,110px);
+        height: 300px;
+        .subcolumn{
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px #E8EBEF solid;
+            &:nth-child(1){
+                border-left: solid 1px #E8EBEF;
+            }
+            .scl{
+                padding-left: 10px;
+                margin-bottom: 20px;
+            }
         }
     }
-}
-.main{
-
+    .etcsizer{
+        width: 100.625px;
+    }
 }

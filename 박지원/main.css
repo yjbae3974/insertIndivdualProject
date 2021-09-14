@@ -1,0 +1,98 @@
+html{
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body .container{
+    width: 100%;
+    height: 460px;
+    padding-top: 70px;
+    background: khaki;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background: darkgreen;
+}
+
+.login-box{
+    width: 350px;
+    height: 300px;
+    margin-left: 1000px;
+    background: ivory;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.title .bigtitle{
+    font-size: 33px;
+}
+
+.title .subtitle{
+    font-size: 18px;
+}
+
+.login{
+    display: flex;
+}
+
+.login .input{
+    display: flex;
+    flex-direction: column;
+    padding-right: 8px;
+}
+
+.input .name{
+  width: 160px;
+  height: 35px;
+
+  margin-bottom: 9px;
+}
+
+.input .studentid{
+    width: 160px;
+    height: 35px;
+  }
+
+.login .log_btn{
+    width: 80px;
+    border-color: rgb(255, 138, 4);
+    border-radius: 5px;
+    background-color: rgb(255, 138, 4);
+}
+
+.notice{
+    width: 100%;
+    height: 700px;
+}
+
+.content{
+    display: flex;
+}
+
+.content .box-1{
+    width: 700px;
+    border: lightslategray solid 0.5px;
+}
+
+.content .box-2{
+    width: 700px;
+    border: lightslategray solid 0.5px;
+}
