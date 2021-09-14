@@ -177,7 +177,7 @@ a {
   display: grid;
   -ms-grid-columns: (110px)[5];
       grid-template-columns: repeat(5, 110px);
-  height: 250px;
+  height: 300px;
 }
 
 .activesubmenu .submenuitemcontainer .subcolumn {
@@ -198,7 +198,7 @@ a {
 
 .activesubmenu .submenuitemcontainer .subcolumn .scl {
   padding-left: 10px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .activesubmenu .etcsizer {
