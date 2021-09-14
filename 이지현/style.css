@@ -1,0 +1,138 @@
+@media only screen and (max-width: 1000px)
+body{
+    background-color:#E9ECF1;
+    font-family: 'Noto Sans KR', 'Malgun Gothic';
+    text-decoration:none;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+
+/*  header랑 nav는 그냥 css block 이용하기*/
+.top{
+    position:fixed;
+    width:100%;
+    top:0;
+}
+.header{
+    display:block;
+    text-decoration:none;
+    
+    height: 40px;
+    background-color: #2b4365;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', 'Malgun Gothic';
+    line-height: 1.2;
+    color: white;
+    
+
+}
+/*headerleft랑 header right-->flexbox쓰기!!*/
+.headerleft{
+    float: left;
+    display:flex;
+    justify-content:center;
+    border-left:1px solid;
+    
+
+}
+.headerright{
+    float:right;
+    display:block;
+
+}
+.nav{
+    display:block;
+    height: 89px;
+    background-color: white;
+    border-bottom: 1px solid #dee1e6;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', 'Malgun Gothic';
+    line-height: 1.2;
+    color: #212121;
+    
+
+}
+/*main: grid: 크기 정하기 딱 절반*/
+
+
+.main{
+    display:block;
+    height: 600px;
+    background-color: #e9ecf1;
+    padding-bottom: 30px;
+}
+.mainleft{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Noto Sans KR', 'Malgun Gothic';
+    line-height: 1.2;
+    color: #212121;
+    margin-top: 20px;
+
+}
+.mainleftline2{
+    margin-top: 20px;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.mainleftline3{
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    margin-top: 20px;
+}
+/*
+.mainleftline2:nth-child(2){이거 맞아...?
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}*/
+
+
+.mainright{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    float: right;
+    height: auto;
+
+}
+/*mainrightinfo,mainrightarticle-->grid사용!!!!*/
+.mainrightinfo{
+    margin: 20px 5px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color:white;
+    color:black;
+
+}
+.mainrightarticle{
+
+}
+.box{
+
+}
+
+/*footer도 그냥 block이용하기*/
+.footer{
+    display:block;
+    height: 145px;
+    background-color: #212121;
+    
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', 'Malgun Gothic';
+    line-height: 1.2;
+    color:white;
+
+}
