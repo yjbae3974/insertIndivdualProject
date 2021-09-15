@@ -245,8 +245,65 @@ a{
     .articles{
         width: 700px;
         height: 1000px;
-        background-color: white;
-        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 340px 340px;
+        grid-gap: 20px;
+        .articlecolumns{
+            display: flex;
+            flex-direction: column;
+            .articlebox{
+                background-color: white;
+                padding: 30px;
+                margin-bottom: 20px;
+                //display: flex;
+                //flex-direction: column;
+                .notice{
+                    background-color: #4390EF;
+                    color: white;
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                .jobinfo{
+                    background-color: #C11444;
+                    color: white;
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                .labs{
+                    background-color: #6B7176;
+                    color: white;
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                .articletitle{
+                    font-weight: 900;
+                    margin-bottom: 10px;
+                }
+                .articledate{
+                    font-size: 12px;
+                    color: gray;
+                    margin-bottom: 20px;
+                }
+                .articletext{
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
 .main{
@@ -281,8 +338,66 @@ a{
     .articles{
         width: 700px;
         height: 1000px;
-        background-color: white;
         margin-left: 10px;
+        display: grid;
+        grid-template-columns: 340px 340px;
+        grid-gap: 20px;
+        .articlecolumns{
+            display: flex;
+            flex-direction: column;
+            .articlebox{
+                background-color: white;
+                padding: 30px;
+                margin-bottom: 20px;
+                //display: flex;
+                //flex-direction: column;
+                .notice{
+                    background-color: #4390EF;
+                    color: white;
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                .jobinfo{
+                    background-color: #C11444;
+                    color: white;
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                .labs{
+                    background-color: #6B7176;
+                    color: white;
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                .articletitle{
+                    font-weight: 900;
+                    margin-bottom: 10px;
+                }
+                .articledate{
+                    font-size: 12px;
+                    color: gray;
+                    margin-bottom: 20px;
+                }
+                .articletext{
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
 .inactivesidebarbackground{
