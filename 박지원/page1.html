@@ -5,30 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Course Registeration System</title>
-    <link rel="stylesheet" href="./page1.css">
-    <script src="./myObj.js"></script>
+    <link rel="stylesheet" href="css\page1.css">
 </head>
 
 <body>
     <div class="left-menu">
-        <div class="info-name" id="info-name"></div>
+        <div class="info-name"></div>
         <ul>
-            <li class="menu-item">
+            <li class="menu-item curri">
                 <img src="https://sugang.ewha.ac.kr/resources/img/layout/icon-search.png" alt="img">
                 <div class="item-title">교과과정</div>
                 <div class="item-subtitle">Curriculum</div>
             </li>
-            <li class="menu-item">
+            <li class="menu-item wish">
                 <img src="https://sugang.ewha.ac.kr/resources/img/layout/icon-cart.png" alt="img">
                 <div class="item-title">장바구니</div>
                 <div class="item-subtitle">Wish List</div>
             </li>
-            <li class="menu-item">
+            <li class="menu-item regis">
                 <img src="https://sugang.ewha.ac.kr/resources/img/layout/icon-registration.png" alt="img">
                 <div class="item-title">수강신청</div>
                 <div class="item-subtitle">Course Registeration</div>
             </li>
-            <li class="menu-item">
+            <li class="menu-item time">
                 <img src="https://sugang.ewha.ac.kr/resources/img/layout/icon-registration.png" alt="img">
                 <div class="item-title"> 시간표</div>
                 <div class="item-subtitle">Time Table</div>
@@ -36,10 +35,54 @@
         </ul>
     </div>
     <div class="main">
+        <div class="popup hidden" id="popup">
+            <div class="top">
+                <div class="popup-name"></div>
+                <div class="logout">
+                    <div class="big">로그아웃</div>
+                    <div class="small">Logout</div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="item">2021학년도 2학기</div>
+                <div class="item">2021-2nd Semester</div>
+
+                <div class="item">Credit Limit</div>
+                <div class="item">
+                    <div>19</div>
+                    <div>학점</div>
+                </div>
+
+                <div class="item">Student ID</div>
+                <div class="item popup-id"></div>
+
+                <div class="item">Grade</div>
+                <div class="item">2</div>
+
+                <div class="item">
+                    <div>College</div>
+                    <div>
+                        <div>엘텍공과대학</div>
+                        <div>ELTEC College of Engineering</div>
+                        <div>소프트웨어학부</div>
+                        <div>Software Science and Engineering</div>
+                        <div>컴퓨터공학</div>
+                        <div>Computer Science and Engineering</div>
+                    </div>
+                </div>
+
+                <div class="item">BA&MA Prgm 학석사연계</div>
+                <div class="item">N</div>
+
+            </div>
+
+        </div>
         <div class="header">
             <img src="https://sugang.ewha.ac.kr/resources/img/layout/bg-header.png" alt="logo">
+            <div class="home-btn"><img src="https://sugang.ewha.ac.kr/resources/img/layout/btn-home.png" alt="img">
+            </div>
         </div>
-        <div class="container">
+        <div class="home">
             <div class="banner"><img src="https://sugang.ewha.ac.kr/resources/img/contents/img-home.jpg" alt="img">
             </div>
             <div class="notice">
@@ -106,14 +149,20 @@
                             information(especially your mobile phone number) on “Eureka > Personal Information.”</p>
                         <h4>문의 Inquries</h4>
                         <p>수강신청 일정 및 방법(Sugang system/schedule) : 학적팀(Registrar) ☎ (02)3277-2030</p>
-                        <p>교과목 정원 및 학년/학과별 인원(Capacity per class/grade) : 수업지원팀(Office of Academic Affairs) ☎(02)3277-2069</p>
+                        <p>교과목 정원 및 학년/학과별 인원(Capacity per class/grade) : 수업지원팀(Office of Academic Affairs)
+                            ☎(02)3277-2069</p>
                     </div>
 
                 </div>
             </div>
 
         </div>
+        <div class="curriculum hidden"></div>
+        <div class="wishlist hidden"></div>
+        <div class="course-registeration hidden"></div>
+        <div class="time-table hidden"></div>
     </div>
+    <script src="page1.js"></script>
 </body>
 
 </html>

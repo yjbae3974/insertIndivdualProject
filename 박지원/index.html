@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Course Registeration System</title>
-    <link rel="stylesheet" href="./main.css">
-    <script src=".\myObj.js"></script>
+    <link rel="stylesheet" href="css\main.css">
 </head>
 
 <body>
@@ -19,18 +18,18 @@
                 <div class="bigtitle"> 수강신청 시스템</div>
                 <div class="subtitle">COURSE REGISTERATION</div>
             </div>
-        
+
             <div class="login">
                 <div class="input">
-                    <input type="text" class="name" id="name" placeholder="  이름" required minlength="2" maxlength="8" size="10">
-                    <input type="text" class="studentid" id="stdid" placeholder="  학번" required minlength="7" maxlength="8"size="10">
+                    <input type="text" class="name" id="name" placeholder="  이름" required minlength="2" size="10">
+                    <input type="text" class="studentid" id="stdid" placeholder="  학번" required minlength="4" size="10">
                 </div>
-                <button class="log-btn" onclick="user_login()">
+                <button class="log-btn">
                     <div class="btn-text1">로그인</div>
                     <div class="btn-text2">login</div>
                 </button>
             </div>
-           
+
         </div>
     </div>
     <div class="notice">
@@ -75,8 +74,6 @@
 
         </div>
     </div>
-
-
+    <script src="script.js"></script>  
 </body>
-
 </html>
