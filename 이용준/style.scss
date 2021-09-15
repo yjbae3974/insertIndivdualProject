@@ -156,7 +156,7 @@ a{
 .activesidebar{
     margin-left: auto;
     background-color: #0174B7;
-    height: 600px;
+    height: auto;
     width: 235px;
     display: grid;
     grid-template-rows: 50px auto;
@@ -168,6 +168,27 @@ a{
         .sidebarmargin{
             background-color: #00263E;
             height: 55px;
+        }
+    }
+    .sidebarmain{
+        background-color: #0174B7;
+        display: grid;
+        grid-auto-rows: 34px;
+        .sidebaritems{
+            color: white;
+            border-bottom: #01659F 1px solid;
+            display: flex;
+            padding-left: 20px;
+            align-items: center;
+            font-size: 12px;
+        }
+        .sidebartitles{
+            color: #78A7C9;
+            border-bottom: #01659F 1px solid;
+            display: flex;
+            padding-left: 20px;
+            align-items: center;
+            font-weight: 800;
         }
     }
 }
