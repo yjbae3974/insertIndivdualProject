@@ -1,8 +1,19 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+* {
+  font-family: 'Hanna', serif;
+}
+
 .hidden {
   display: none;
 }
 
 body {
-  background-color: #99eb80;
+  background-color: #b182c3;
+}
+
+.container {
+  margin: 5% 5%;
 }
 /*# sourceMappingURL=style.css.map */

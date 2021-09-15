@@ -1,39 +1,55 @@
-html{
-    height:100%;
-    margin: 0;
-    padding: 0;
-}
-
-body{
+html {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-body .container{
-    width: 100%;
-    height: 460px;
-    padding-top: 70px;
-    background: khaki;
-}
-.header{
-    width: 100%;
-    height: 100px;
-    background: darkgreen;
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.login-box{
-    width: 350px;
-    height: 300px;
-    margin-left: 1000px;
-    background: ivory;
+.header {
+    width: 100%;
+    height: 95px;
+    padding-left: 160px;
+    box-sizing: border-box;
+    background-color: #00663f;
+}
+
+.header .logo {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://sugang.ewha.ac.kr/resources/img/login/logo.png");
+    background-repeat: no-repeat;
+}
+
+body .container {
+    width: 100%;
+    height: 530px;
+    padding-top: 75px;
+    padding-left: 990px;
+    box-sizing: border-box; /*padding-left때문에 div의 크기가 변형되는 것을 방지*/
+    background-color: khaki; /*background-image가 불투명하더라도 이미지를 불러올 수 없는 상황에 대비하여 배경 색을 지정해 놓는 것이 좋다*/
+    background-image: url("https://sugang.ewha.ac.kr/resources/img/login/bg-img.jpg");
+    background-size: cover; /*image를 최대한 확대*/
+}
+
+
+.login-box {
+    width: 370px;
+    height: 315px;
+    background: #fff;
+    /* border: #fff solid 1px;
+    border-radius: 10px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.title{
+.title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,58 +57,69 @@ body .container{
     padding-bottom: 25px;
 }
 
-.title .bigtitle{
+.title .bigtitle {
     font-size: 33px;
 }
 
-.title .subtitle{
+.title .subtitle {
     font-size: 18px;
 }
 
-.login{
+.login {
     display: flex;
 }
 
-.login .input{
+.login .input {
     display: flex;
     flex-direction: column;
     padding-right: 8px;
 }
 
-.input .name{
-  width: 160px;
-  height: 35px;
-
-  margin-bottom: 9px;
-}
-
-.input .studentid{
+.input .name {
     width: 160px;
     height: 35px;
-  }
+    margin-bottom: 9px;
+}
 
-.login .log_btn{
+.input .studentid {
+    width: 160px;
+    height: 35px;
+}
+
+.login .log-btn {
     width: 80px;
     border-color: rgb(255, 138, 4);
     border-radius: 5px;
     background-color: rgb(255, 138, 4);
 }
 
-.notice{
-    width: 100%;
+.notice {
+    width: 1350px;
     height: 700px;
+    padding: 70px 0px 0px 160px;
 }
 
-.content{
+.notice .n-title{
     display: flex;
 }
 
-.content .box-1{
-    width: 700px;
-    border: lightslategray solid 0.5px;
+.n-title .n-bigtitle{
+    font-size: 25px;
+} 
+
+.n-title .n-subtitle{
+    font-size: 16px;
+} 
+
+.content {
+    display: flex;
+    margin-top: 40px;
 }
 
-.content .box-2{
-    width: 700px;
-    border: lightslategray solid 0.5px;
+.content .box {
+    width: 570px;
+    height: 450px;
+    padding: 20px 20px 20px 20px;
+    margin-right: 20px;
+    border: lightgray solid 0.5px;
 }

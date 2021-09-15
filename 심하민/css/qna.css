@@ -1,37 +1,61 @@
-.qBox {
-  background-color: whitesmoke;
+.qna {
+  margin: 5% 5%;
   text-align: center;
   border-radius: 15px;
-  font-size: 30px;
 }
 
 .qna h1 {
-  padding: 20% 10%;
-  text-align: center;
-  background-color: whitesmoke;
+  margin-top: 10%;
+  background-color: beige;
   border-radius: 15px;
 }
 
-.qna {
-  margin: 40% 10%;
-  background-color: whitesmoke;
+.qna .qBox {
   text-align: center;
-  border-radius: 15px;
-}
-
-.answerbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 10%;
-  padding-bottom: 20%;
-}
-
-.answerList {
+  border-radius: 30px;
   font-size: 20px;
+  background-color: beige;
+  padding: 5% 10%;
+  margin: 10% 0%;
+}
+
+.qna .answerbox {
+  margin-top: 5%;
+}
+
+.qna .answerList {
+  width: 100%;
+  padding: 3%;
+  font-size: 15px;
+  border-radius: 30px;
+  margin-bottom: 5%;
+}
+
+.qna .answerList:hover {
+  background-color: rgba(139, 93, 128, 0.671);
+  color: white;
+}
+
+.qna .answerList:focus {
+  background-color: #353333;
+}
+
+.qna .status {
+  height: 20px;
+  width: 100%;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.qna .status .statusbar {
+  border-radius: 15px;
+  height: 100%;
+  background-color: #fa6afa;
+}
+
+@media (max-width: 500px) {
+  .qna h1 {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=qna.css.map */

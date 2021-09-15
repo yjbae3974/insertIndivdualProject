@@ -1,10 +1,119 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Course Registeration System</title>
+    <link rel="stylesheet" href="./page1.css">
+    <script src="./myObj.js"></script>
 </head>
+
 <body>
-    
+    <div class="left-menu">
+        <div class="info-name" id="info-name"></div>
+        <ul>
+            <li class="menu-item">
+                <img src="https://sugang.ewha.ac.kr/resources/img/layout/icon-search.png" alt="img">
+                <div class="item-title">교과과정</div>
+                <div class="item-subtitle">Curriculum</div>
+            </li>
+            <li class="menu-item">
+                <img src="https://sugang.ewha.ac.kr/resources/img/layout/icon-cart.png" alt="img">
+                <div class="item-title">장바구니</div>
+                <div class="item-subtitle">Wish List</div>
+            </li>
+            <li class="menu-item">
+                <img src="https://sugang.ewha.ac.kr/resources/img/layout/icon-registration.png" alt="img">
+                <div class="item-title">수강신청</div>
+                <div class="item-subtitle">Course Registeration</div>
+            </li>
+            <li class="menu-item">
+                <img src="https://sugang.ewha.ac.kr/resources/img/layout/icon-registration.png" alt="img">
+                <div class="item-title"> 시간표</div>
+                <div class="item-subtitle">Time Table</div>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="header">
+            <img src="https://sugang.ewha.ac.kr/resources/img/layout/bg-header.png" alt="logo">
+        </div>
+        <div class="container">
+            <div class="banner"><img src="https://sugang.ewha.ac.kr/resources/img/contents/img-home.jpg" alt="img">
+            </div>
+            <div class="notice">
+                <div class="n-title">
+                    <div class="n-bigtitle">수강신청 유의사항</div>
+                    <div class="n-subtitle">Notice</div>
+                </div>
+                <div class="content">
+
+                    <div class="box">
+                        <h4>매크로 프로그램 방지</h4>
+                        <p>매크로프로그램 사용을 방지하기 위하여 관리자가 지정한 횟수이상 저장을 시도하면 화면에 나타나는 문자열을 입력하고 계속 사용 하여야 함.</p>
+                        <p>문자열 오류 횟수가 5회 이상 이면 자동 로그아웃되고 문자열 입력이 올바를 경우 이전 요청이 자동 수행됨</p>
+                        <h4>새로고침(F5) 사용 불가</h4>
+                        <p>보안상의 이유로 브라우저의 새로고침(F5) 기능 사용시 로그아웃됨 (화면 내 새로고침 Refresh 버튼 사용)</p>
+                        <h4>팝업차단 해제</h4>
+                        <p>팝업차단 설정이 해제되지 않았을 경우 팝업차단을 해제</p>
+                        <p>인터넷 익스플로러(IE) : 우측 상단 메뉴 오픈 -> 설정 -> 인터넷옵션 -> 개인정보 -> 팝업차단 체크 해지 또는 사이트 메뉴에 추가</p>
+                        <p>크롬(Chrome) : 우측 상단 메뉴 오픈 -> 설정 -> 설정검색창에 "팝업" 검색 ->사이트설정 -> 팝업및 디렉션 -> 팝업허용 또는 사이트 추가</p>
+                        <p>파이어폭스(Firefox) : 우측상단 메뉴 오픈 -> 설정 > 개인정보 및 보안 > 팝업 창 차단 체크 해지 또는 예외목록에 등록</p>
+                        <p>팝업 설정 및 해제는 브라우저, 버전별로 방법이 다를 수 있으니 해당 브라우저 공식사이트 또는 검색을 통해 확인 바람</p>
+                        <h4>모니터 해상도</h4>
+                        <p>수강신청시스템은 1920*1080 해상도에 최적화되어 있으며 그 이상의 해상도로 화면 설정</p>
+                        <p>해상도가 작아 정상적으로 보이지 않을 경우 브라우저 확대,축소 기능 으로 사용자 환경에 맞게 조절 후 사용</p>
+                        <p>수강신청전 미리 확인하여 수강신청시 지장 없도록 유의하기 바람</p>
+                        <h4>브라우저</h4>
+                        <p>크롬, 파이어폭스 브라우저에 최적화 되있음</p>
+                        <p>해상도가 작아 정상적으로 보이지 않을 경우 브라우저 확대,축소 기능으로 적절히 조절 후 사용</p>
+                        <p>인터넷 익스플로러 10이하 버전을 사용하시는 분들은 정상적으로 동작하지 않을 수 있으며, 보안상의 이유로도 10버전 이상으로 업그레이드하시기를 권장</p>
+                        <h4>이화여대 어플 다운로드 및 개인정보 업데이트</h4>
+                        <p>대기수강 교과목 PUSH 알림을 위하여 “이화여자대학교 HOME” 어플 다운로드 후, PUSH 알림 설정. ‘유레카>개인정보변경’에서 개인정보(특히 휴대전화 번호)
+                            업데이트 필수</p>
+                    </div>
+                    <div class="box">
+                        <h4>Macro Prevention</h4>
+                        <p>If students try to click excessively more than the number of times that system manager set
+                            up, putting key word page would come up on the screen for macro prevention. When typing
+                            letters incorrectly for 5 times, users will be logged out. When typing letters correctly,
+                            course registration process will proceed.</p>
+                        <h4>Prevention for Multi Login</h4>
+                        <p>If students login with same student ID on more than two devices simultaneously (including PC
+                            and mobile), only last login is validate to use and rest of them would be logged out
+                            forcibly.</p>
+                        <h4>Refresh(F5) Prevention</h4>
+                        <p>For security purposes, when students try to click “Refresh(F5)” button of your browser, they
+                            would be logged out automatically. Please only use 새로고침 Refresh button on your page.</p>
+                        <h4>Please enable the POP UP service on your PC.</h4>
+                        <p>팝업차단 설정이 해제되지 않았을 경우 팝업차단을 해제</p>
+                        <p>Internet Explorer(IE): Set-up ⟶ Toos ⟶ Internet Option ⟶ Personal Information ⟶ Enable the
+                            POP UP service or add the Sugang Site</p>
+                        <p>Chrome : Set-up ⟶ Toos ⟶ seach “pop up” in the search box ⟶ set up the site ⟶POP UP and
+                            Direcrtion ⟶ Enable the POP UP service or add the Sugang Site</p>
+                        <p>Firefox : Set-up ⟶ Toos ⟶ Personal Informaion and Security ⟶ Enable the POP UP service or add
+                            the Sugang Site</p>
+                        <p>팝업 설정 및 해제는 브라우저, 버전별로 방법이 다를 수 있으니 해당 브라우저 공식사이트 또는 검색을 통해 확인 바람</p>
+                        <h4>Browser</h4>
+                        <p>Sugang portal system is optimized on Chrome or firefox browsers.</p>
+                        <p>If you have a low resolution, you should adjust your monitor.</p>
+                        <p>If you use Internet Explorer(IE) under 10.0 version, your sugang system will not be worked,
+                            and strongly recommended to upgrade to over 10.0 version for security.</p>
+                        <h4>EWHA HOME APP download and update personal information</h4>
+                        <p>In order to get the alarm for waiting courses, you should install EWHA HOME APP through Apple
+                            or Play store, and enable the PUSH alarm service. Also update your personal
+                            information(especially your mobile phone number) on “Eureka > Personal Information.”</p>
+                        <h4>문의 Inquries</h4>
+                        <p>수강신청 일정 및 방법(Sugang system/schedule) : 학적팀(Registrar) ☎ (02)3277-2030</p>
+                        <p>교과목 정원 및 학년/학과별 인원(Capacity per class/grade) : 수업지원팀(Office of Academic Affairs) ☎(02)3277-2069</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
+
 </html>
