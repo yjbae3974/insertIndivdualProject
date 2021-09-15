@@ -93,6 +93,12 @@ body .container {
     background-color: rgb(255, 138, 4);
 }
 
+.log-btn:hover{
+    border-color: rgb(218, 118, 4);
+    background-color: rgb(218, 118, 4);
+    cursor: pointer;
+}
+
 .notice {
     width: 1350px;
     height: 700px;
@@ -109,6 +115,8 @@ body .container {
 
 .n-title .n-subtitle{
     font-size: 16px;
+    padding-left: 5px;
+    padding-top: 10px;
 } 
 
 .content {
@@ -123,3 +131,10 @@ body .container {
     margin-right: 20px;
     border: lightgray solid 0.5px;
 }
+
+p::before {
+    content: "> ";
+    font-size: 20px;
+    color: rgb(109, 214, 4);
+}
+
