@@ -1,7 +1,9 @@
 body{
+    width: 100%;
     margin: 0px;
     height: auto;
     background-color: #E9ECF1;
+    display: flex;
 }
 a{
     cursor: pointer;
@@ -150,4 +152,25 @@ a{
     .etcsizer{
         width: 100.625px;
     }
+}
+.activesidebar{
+    margin-left: auto;
+    background-color: #0174B7;
+    height: 600px;
+    width: 235px;
+    display: grid;
+    grid-template-rows: 50px auto;
+    z-index: 0;
+    .sidebar-top{
+        display: grid;
+        grid-template-columns: 180px 55px;
+        height: 50px;
+        .sidebarmargin{
+            background-color: #00263E;
+            height: 55px;
+        }
+    }
+}
+.inactivesidebar{
+    display: none;
 }

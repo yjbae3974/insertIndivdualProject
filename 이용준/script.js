@@ -3,6 +3,7 @@ const index = document.querySelector("div.index");
 const header = document.querySelector("div.header");
 const sub = document.querySelector("div.submenu");
 const mobile = document.querySelector("div.inactivemobileheader");
+const sidebar = document.querySelector("div.inactivesidebar");
 
 function handleMenuMouseenter(){
     console.log("mouseon");
@@ -19,17 +20,21 @@ function handleMenuMouseleave(){
 index.addEventListener("mouseenter",handleMenuMouseenter);
 nav2.addEventListener("mouseleave",handleMenuMouseleave);
 
-function togglemobilemenu(){
-    console.log("mobilemenu toggled");
+function opensidebar(){
+    sidebar.className="activesidebar";
+}
+function closesidebar(){
+    sidebar.className="inactivesidebar";
 }
 function turnMobile(){
     if(window.innerWidth<=870){
         console.log("mobile");
         header.className="inactiveheader";
-        mobile.className="mobileheader"
+        mobile.className="mobileheader";
     }else if(window.innerWidth>870){
         header.className="header";
-        mobile.className="inactivemobileheader"
+        mobile.className="inactivemobileheader";
+        sidebar.className="inactivesidebar";
     }
 }
 window.addEventListener("resize",turnMobile);

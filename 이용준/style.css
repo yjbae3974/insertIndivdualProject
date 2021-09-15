@@ -1,7 +1,11 @@
 body {
+  width: 100%;
   margin: 0px;
   height: auto;
   background-color: #E9ECF1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 a {
@@ -233,5 +237,34 @@ a {
 
 .activesubmenu .etcsizer {
   width: 100.625px;
+}
+
+.activesidebar {
+  margin-left: auto;
+  background-color: #0174B7;
+  height: 600px;
+  width: 235px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50px auto;
+      grid-template-rows: 50px auto;
+  z-index: 0;
+}
+
+.activesidebar .sidebar-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 180px 55px;
+      grid-template-columns: 180px 55px;
+  height: 50px;
+}
+
+.activesidebar .sidebar-top .sidebarmargin {
+  background-color: #00263E;
+  height: 55px;
+}
+
+.inactivesidebar {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
