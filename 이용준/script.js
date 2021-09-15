@@ -4,6 +4,7 @@ const header = document.querySelector("div.header");
 const sub = document.querySelector("div.submenu");
 const mobile = document.querySelector("div.inactivemobileheader");
 const sidebar = document.querySelector("div.inactivesidebar");
+const main = document.querySelector("div.main");
 
 function handleMenuMouseenter(){
     console.log("mouseon");
@@ -27,14 +28,16 @@ function closesidebar(){
     sidebar.className="inactivesidebar";
 }
 function turnMobile(){
-    if(window.innerWidth<=870){
+    if(window.innerWidth<=890){
         console.log("mobile");
         header.className="inactiveheader";
         mobile.className="mobileheader";
-    }else if(window.innerWidth>870){
+        main.className="mobilemain";
+    }else if(window.innerWidth>890){
         header.className="header";
         mobile.className="inactivemobileheader";
         sidebar.className="inactivesidebar";
+        main.className="main";
     }
 }
 window.addEventListener("resize",turnMobile);
