@@ -161,10 +161,18 @@ a{
         width: 100.625px;
     }
 }
+.sidebarcontainer{
+    width: 100%;
+    z-index: 4;
+    display: flex;
+    justify-content: end;
+}
 .activesidebar{
+    position: fixed;
     margin-left: auto;
     background-color: #0174B7;
-    height: auto;
+    height: 100vh;
+    overflow-y: auto;
     width: 235px;
     display: grid;
     grid-template-rows: 50px auto;
@@ -183,6 +191,7 @@ a{
         background-color: #0174B7;
         display: grid;
         grid-auto-rows: 34px;
+        overflow-y: auto;
         .sidebaritems{
             color: white;
             border-bottom: #01659F 1px solid;

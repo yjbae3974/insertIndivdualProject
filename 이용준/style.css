@@ -250,10 +250,23 @@ a {
   width: 100.625px;
 }
 
+.sidebarcontainer {
+  width: 100%;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 .activesidebar {
+  position: fixed;
   margin-left: auto;
   background-color: #0174B7;
-  height: auto;
+  height: 100vh;
+  overflow-y: auto;
   width: 235px;
   display: -ms-grid;
   display: grid;
@@ -281,6 +294,7 @@ a {
   display: -ms-grid;
   display: grid;
   grid-auto-rows: 34px;
+  overflow-y: auto;
 }
 
 .activesidebar .sidebarmain .sidebaritems {
