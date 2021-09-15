@@ -19,7 +19,9 @@ function handleMenuMouseleave(){
 index.addEventListener("mouseenter",handleMenuMouseenter);
 nav2.addEventListener("mouseleave",handleMenuMouseleave);
 
-
+function togglemobilemenu(){
+    console.log("mobilemenu toggled");
+}
 function turnMobile(){
     if(window.innerWidth<=870){
         console.log("mobile");
