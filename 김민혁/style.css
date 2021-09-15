@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    color: blue;
+    border-bottom: black 1px solid;
+}
+
+#vocabularySets{
+    column-count: 2;
+}
+
+#vocabularySets:after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px dotted red;
+    transform: translate(-50%);
+}
+#grid{
+    margin: 10px auto;
+    border: 5px solid black;
+    position: relative;
+}
+div {
+    margin: 10px auto;
+    border: 1px solid black;
+    position: relative;
+}
+
+@media(max-width: 576px){
+    #vocabularySets{
+        column-count: 1;
+    }
+    #vocabularySets:after{
+        border-left: none;
+    }
+    /* #grid{
+        display: grid;
+        grid-template-rows: 50px 30px 1fr;
+    } */
+}
