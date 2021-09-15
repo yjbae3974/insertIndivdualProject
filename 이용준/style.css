@@ -397,6 +397,7 @@ a {
   -ms-grid-columns: 340px 340px;
       grid-template-columns: 340px 340px;
   grid-gap: 20px;
+  margin-top: 10px;
 }
 
 .mobilemain .articles .articlecolumns {
@@ -460,6 +461,10 @@ a {
 .mobilemain .articles .articlecolumns .articlebox .articletitle {
   font-weight: 900;
   margin-bottom: 10px;
+}
+
+.mobilemain .articles .articlecolumns .articlebox .articletitle:hover {
+  color: #017DD4;
 }
 
 .mobilemain .articles .articlecolumns .articlebox .articledate {
@@ -603,6 +608,10 @@ a {
 .main .articles .articlecolumns .articlebox .articletitle {
   font-weight: 900;
   margin-bottom: 10px;
+}
+
+.main .articles .articlecolumns .articlebox .articletitle:hover {
+  color: #017DD4;
 }
 
 .main .articles .articlecolumns .articlebox .articledate {
