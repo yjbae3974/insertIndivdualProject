@@ -67,7 +67,7 @@ function setResult(){
     let point = calResult();
     const imgdiv = document.querySelector('.resultImg');
     var resultImg = document.createElement('img');
-    var imgURL = 'img/image-' + point + '.png';
+    var imgURL = 'img/image_' + point + '.png';
     resultImg.src = imgURL;
     resultImg.alt = point;
     resultImg.classList.add("imgList");
