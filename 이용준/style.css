@@ -537,6 +537,7 @@ a {
 }
 
 .main .articles {
+  overflow-y: auto;
   width: 700px;
   height: 1000px;
   margin-left: 10px;
