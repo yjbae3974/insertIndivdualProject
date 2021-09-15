@@ -1,3 +1,10 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+* {
+  font-family: 'Hanna', serif;
+}
+
 .hidden {
   display: none;
 }

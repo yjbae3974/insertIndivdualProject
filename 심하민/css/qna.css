@@ -7,6 +7,7 @@
 .qna h1 {
   margin-top: 10%;
   background-color: beige;
+  border-radius: 15px;
 }
 
 .qna .qBox {
@@ -50,5 +51,11 @@
   border-radius: 15px;
   height: 100%;
   background-color: #fa6afa;
+}
+
+@media (max-width: 500px) {
+  .qna h1 {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=qna.css.map */
