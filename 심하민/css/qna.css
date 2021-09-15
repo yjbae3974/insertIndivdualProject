@@ -1,0 +1,75 @@
+.qna {
+  margin: 5% 5%;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.qna h1 {
+  margin-top: 10%;
+  background-color: beige;
+  border-radius: 15px;
+}
+
+.qna .qBox {
+  text-align: center;
+  border-radius: 30px;
+  font-size: 20px;
+  background-color: beige;
+  padding: 5% 10%;
+  margin: 10% 0%;
+}
+
+.qna .answerbox {
+  margin-top: 5%;
+}
+
+.qna .answerList {
+  width: 100%;
+  padding: 3%;
+  font-size: 15px;
+  border-radius: 30px;
+  margin-bottom: 5%;
+}
+
+.qna .answerList:hover {
+  background-color: rgba(139, 93, 128, 0.671);
+  color: white;
+}
+
+.qna .answerList:focus {
+  background-color: #353333;
+}
+
+.qna .status {
+  height: 20px;
+  width: 100%;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.qna .status .statusbar {
+  border-radius: 15px;
+  height: 100%;
+  background-color: #fa6afa;
+  font-size: 10px;
+}
+
+.qna .status .statusbarSmall {
+  border-radius: 15px;
+  height: 100%;
+  background-color: #3bbecf;
+  font-size: 10px;
+}
+
+@media (max-width: 500px) {
+  .qna h1 {
+    font-size: 20px;
+  }
+  .qna .status .statusbar {
+    display: none;
+  }
+  .qna .status .statusbarSmall {
+    display: block;
+  }
+}
+/*# sourceMappingURL=qna.css.map */
