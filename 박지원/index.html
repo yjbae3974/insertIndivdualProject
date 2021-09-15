@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Course Registeration System</title>
     <link rel="stylesheet" href="./main.css">
-    <script src="./script.js"></script>
+    <script src=".\myObj.js"></script>
 </head>
 
 <body>
@@ -19,17 +19,18 @@
                 <div class="bigtitle"> 수강신청 시스템</div>
                 <div class="subtitle">COURSE REGISTERATION</div>
             </div>
+        
             <div class="login">
                 <div class="input">
-                    <input type="text" class="name" placeholder="  이름" required minlength="4" maxlength="8" size="10">
-                    <input type="text" class="studentid" placeholder="  학번" required minlength="4" maxlength="8"
-                        size="10">
+                    <input type="text" class="name" id="name" placeholder="  이름" required minlength="2" maxlength="8" size="10">
+                    <input type="text" class="studentid" id="stdid" placeholder="  학번" required minlength="7" maxlength="8"size="10">
                 </div>
-                <button class="log-btn" onclick="location.href='./page1.html'">
+                <button class="log-btn" onclick="user_login()">
                     <div class="btn-text1">로그인</div>
                     <div class="btn-text2">login</div>
                 </button>
             </div>
+           
         </div>
     </div>
     <div class="notice">
@@ -39,7 +40,7 @@
         </div>
         <div class="content">
 
-            <div class="box-1">
+            <div class="box">
                 <p>접속자가 많은 경우, 로그인 및 수강신청시 순차적으로 서비스 진입이 허용됩니다.<br>
                     대기 시간이 발생할 수 있으나, 순차적으로 진행되니 참고하시기 바랍니다.</p>
 
@@ -53,7 +54,7 @@
                 <p>수강신청을 위한 과도한 클릭이나 자동접속프로그램(매크로)등을 사용시 수강신청 프로그램이 강제 종료됩니다. 매크로등을 사용시 개인적 불이익을 받을 수 있으니 사용하지 마시기
                     바랍니다.</p>
             </div>
-            <div class="box-2">
+            <div class="box">
                 <p>In case of too much traffic in the system, a waiting queue will be allocated for all students trying
                     to login or register courses.</p>
 

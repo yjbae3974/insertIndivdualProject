@@ -94,7 +94,7 @@ body .container {
 }
 
 .notice {
-    width: 100%;
+    width: 1350px;
     height: 700px;
     padding: 70px 0px 0px 160px;
 }
@@ -107,8 +107,8 @@ body .container {
     font-size: 25px;
 } 
 
-.n-title .n-bigtitle{
-    
+.n-title .n-subtitle{
+    font-size: 16px;
 } 
 
 .content {
@@ -116,17 +116,10 @@ body .container {
     margin-top: 40px;
 }
 
-.content .box-1 {
+.content .box {
     width: 570px;
     height: 450px;
     padding: 20px 20px 20px 20px;
     margin-right: 20px;
-    border: lightslategray solid 0.5px;
-}
-
-.content .box-2 {
-    width: 570px;
-    height: 450px;
-    padding: 20px 20px 20px 20px;
-    border: lightslategray solid 0.5px;
+    border: lightgray solid 0.5px;
 }
