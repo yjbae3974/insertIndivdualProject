@@ -5,6 +5,7 @@ const result = document.querySelector(".result");
 const HIDDEN_CLASSNAME = "hidden";
 const end = qnaList.length;
 const select = [];
+const restart = document.querySelector("#restart");
 
 function calResult(){
     var point = [
@@ -69,6 +70,7 @@ function setResult(){
     var imgURL = 'img/image-' + point + '.png';
     resultImg.src = imgURL;
     resultImg.alt = point;
+    resultImg.classList.add("imgList");
     imgdiv.appendChild(resultImg);
     const resultName = document.querySelector(".resultname");
     resultName.innerHTML = infoList[point].name;
@@ -96,8 +98,14 @@ function goNext(qNum){
         addAnswer(qnaList[qNum].a[i].answer, qNum, i);
     }
     var status = document.querySelector(".statusbar");
-    status.style.width = (100/end) * (qNum+1) + '%';
-    status.style.opacity = (100/end) * (qNum+1) *0.01;
+    var statusSmall = document.querySelector(".statusbarSmall");
+    let percent = 100/end*(qNum+1);
+    status.style.width = percent+'%';
+    status.style.opacity = percent*0.01;
+    status.innerHTML = "현재 진행률 : " + parseInt(percent) + "%" ;
+    statusSmall.style.width = percent+'%';
+    statusSmall.style.opacity = percent*0.01;
+    statusSmall.innerHTML = parseInt(percent) + "%" ;
 }
 
 function starttest(){
@@ -106,7 +114,14 @@ function starttest(){
     let qNum = 0;
     goNext(qNum);
 }
+function restartTest(){
+    main.classList.remove(HIDDEN_CLASSNAME);
+    result.classList.add(HIDDEN_CLASSNAME);
+    const imgList = document.querySelector(".imgList");
+    imgList.classList.add(HIDDEN_CLASSNAME);
+}
 
 start.addEventListener("click", starttest);
 
+restart.addEventListener("click", restartTest);
 

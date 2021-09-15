@@ -41,12 +41,28 @@
             border-radius: 15px;
             height: 100%;
             background-color: rgb(250, 106, 250);
+            font-size: 10px;
+        }
+        .statusbarSmall{
+            border-radius: 15px;
+            height: 100%;
+            background-color: rgb(59, 190, 207);
+            font-size: 10px;
         }
     }
     @media(max-width: 500px){
         h1{
             font-size: 20px;
-        }   
+        }
+        .status{
+            .statusbar{
+                display: none;
+            }
+            .statusbarSmall{
+                display: block;
+            }
+        }
+        
     }
     
 }

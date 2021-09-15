@@ -51,11 +51,25 @@
   border-radius: 15px;
   height: 100%;
   background-color: #fa6afa;
+  font-size: 10px;
+}
+
+.qna .status .statusbarSmall {
+  border-radius: 15px;
+  height: 100%;
+  background-color: #3bbecf;
+  font-size: 10px;
 }
 
 @media (max-width: 500px) {
   .qna h1 {
     font-size: 20px;
+  }
+  .qna .status .statusbar {
+    display: none;
+  }
+  .qna .status .statusbarSmall {
+    display: block;
   }
 }
 /*# sourceMappingURL=qna.css.map */
