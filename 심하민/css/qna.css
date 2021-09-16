@@ -1,7 +1,10 @@
 .qna {
-  margin: 5% 5%;
+  width: 80%;
+  height: 60%;
+  margin: 5% 10%;
   text-align: center;
   border-radius: 15px;
+  background-color: rgba(218, 188, 228, 0.603);
 }
 
 .qna h1 {
@@ -43,15 +46,15 @@
 .qna .status {
   height: 20px;
   width: 100%;
-  background-color: white;
-  border-radius: 25px;
+  background-color: rgba(149, 147, 147, 0.863);
+  border-radius: 5px;
+  border: solid 2px #fdfcfa;
 }
 
 .qna .status .statusbar {
-  border-radius: 15px;
   height: 100%;
-  background-color: #fa6afa;
-  font-size: 10px;
+  background-color: #0a55f6;
+  font-size: 20px;
 }
 
 .qna .status .statusbarSmall {

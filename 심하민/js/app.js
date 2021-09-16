@@ -96,15 +96,22 @@ function goNext(qNum){
     for (i in qnaList[qNum].a){
         addAnswer(qnaList[qNum].a[i].answer, qNum, i);
     }
-    var status = document.querySelector(".statusbar");
-    var statusSmall = document.querySelector(".statusbarSmall");
+    const status = document.querySelector(".statusbar");
+    const statusSmall = document.querySelector(".statusbarSmall");
+    const state = document.querySelector(".state")
     let percent = 100/end*(qNum+1);
     status.style.width = percent+'%';
-    status.style.opacity = percent*0.01;
+    //status.style.opacity = percent*0.01;
     status.innerHTML = "현재 진행률 : " + parseInt(percent) + "%" ;
     statusSmall.style.width = percent+'%';
-    statusSmall.style.opacity = percent*0.01;
+    // statusSmall.style.opacity = percent*0.01;
     statusSmall.innerHTML = parseInt(percent) + "%" ;
+    if (percent<10){
+        status.style.fontSize = "8px";
+    }
+    else{
+        status.style.fontSize = "15px";
+    }
 }
 
 function starttest(){

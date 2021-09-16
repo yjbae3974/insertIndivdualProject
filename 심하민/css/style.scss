@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import "_variables.scss";
 
 *{
     font-family: 'Nanum Pen Script', cursive;
+    word-break: keep-all;
 }
 .hidden{
     display: none;
 }
 
 body{
-    background-color: rgb(177, 130, 195);
+    background-color: $bg;
 }
 
 .default{

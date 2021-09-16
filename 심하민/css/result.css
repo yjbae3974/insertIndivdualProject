@@ -11,8 +11,8 @@
 }
 
 .result img {
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
 }
 
 .result .resultname {
@@ -31,5 +31,24 @@
   font-size: 20px;
   margin: 5% 5%;
   border-radius: 25px;
+}
+
+@media (min-width: 630px) {
+  .result {
+    margin: 5% 5%;
+  }
+  .result h1 {
+    font-size: 35px;
+  }
+  .result .resultname {
+    font-size: 35px;
+  }
+  .result .resultDescription {
+    font-size: 25px;
+    padding: 5% 5%;
+  }
+  .result #restart {
+    margin-top: 0%;
+  }
 }
 /*# sourceMappingURL=result.css.map */

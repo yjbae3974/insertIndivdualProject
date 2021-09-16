@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 * {
   font-family: 'Nanum Pen Script', cursive;
+  word-break: keep-all;
 }
 
 .hidden {
@@ -8,7 +9,7 @@
 }
 
 body {
-  background-color: #b182c3;
+  background-color: #C0A9BD;
 }
 
 .default {
