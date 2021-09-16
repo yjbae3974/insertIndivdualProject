@@ -5,6 +5,7 @@ const sub = document.querySelector("div.submenu");
 const mobile = document.querySelector("div.inactivemobileheader");
 const sidebar = document.querySelector("div.inactivesidebar");
 const main = document.querySelector("div.main");
+const sbb = document.querySelector("div.inactivesidebarbackground");
 
 function handleMenuMouseenter(){
     console.log("mouseon");
@@ -23,9 +24,11 @@ nav2.addEventListener("mouseleave",handleMenuMouseleave);
 
 function opensidebar(){
     sidebar.className="activesidebar";
+    sbb.className="activesidebarbackground";
 }
 function closesidebar(){
     sidebar.className="inactivesidebar";
+    sbb.className="inactivesidebarbackground";
 }
 function turnMobile(){
     if(window.innerWidth<=890){
@@ -36,8 +39,8 @@ function turnMobile(){
     }else if(window.innerWidth>890){
         header.className="header";
         mobile.className="inactivemobileheader";
-        sidebar.className="inactivesidebar";
         main.className="main";
+        closesidebar();
     }
 }
 window.addEventListener("resize",turnMobile);

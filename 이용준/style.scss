@@ -138,7 +138,7 @@ a{
     .submenuitemcontainer{
         width: 550.453px;
         display: grid;
-        grid-template-columns: repeat(5,110px);
+        grid-template-columns: 110px 110px 110px 110px 110px;
         height: 300px;
         .subcolumn{
             font-size: 12px;
@@ -161,10 +161,18 @@ a{
         width: 100.625px;
     }
 }
+.sidebarcontainer{
+    width: 100%;
+    z-index: 4;
+    display: flex;
+    justify-content: end;
+}
 .activesidebar{
+    position: fixed;
     margin-left: auto;
     background-color: #0174B7;
-    height: auto;
+    height: 100vh;
+    overflow-y: auto;
     width: 235px;
     display: grid;
     grid-template-rows: 50px auto;
@@ -183,6 +191,7 @@ a{
         background-color: #0174B7;
         display: grid;
         grid-auto-rows: 34px;
+        overflow-y: auto;
         .sidebaritems{
             color: white;
             border-bottom: #01659F 1px solid;
@@ -245,8 +254,69 @@ a{
     .articles{
         width: 700px;
         height: 1000px;
-        background-color: white;
+        display: grid;
+        grid-template-columns: 340px 340px;
+        grid-gap: 20px;
         margin-top: 10px;
+        .articlecolumns{
+            display: flex;
+            flex-direction: column;
+            .articlebox{
+                background-color: white;
+                padding: 30px;
+                margin-bottom: 20px;
+                //display: flex;
+                //flex-direction: column;
+                .notice{
+                    background-color: #4390EF;
+                    color: white;
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                .jobinfo{
+                    background-color: #C11444;
+                    color: white;
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                .labs{
+                    background-color: #6B7176;
+                    color: white;
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                .articletitle{
+                    font-weight: 900;
+                    margin-bottom: 10px;
+                    &:hover{
+                        color: #017DD4;
+                    }
+                }
+                .articledate{
+                    font-size: 12px;
+                    color: gray;
+                    margin-bottom: 20px;
+                }
+                .articletext{
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
 .main{
@@ -279,9 +349,82 @@ a{
         }
     }
     .articles{
+        overflow-y: auto;
         width: 700px;
         height: 1000px;
-        background-color: white;
         margin-left: 10px;
+        display: grid;
+        grid-template-columns: 340px 340px;
+        grid-gap: 20px;
+        .articlecolumns{
+            display: flex;
+            flex-direction: column;
+            .articlebox{
+                background-color: white;
+                padding: 30px;
+                margin-bottom: 20px;
+                //display: flex;
+                //flex-direction: column;
+                .notice{
+                    background-color: #4390EF;
+                    color: white;
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                .jobinfo{
+                    background-color: #C11444;
+                    color: white;
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                .labs{
+                    background-color: #6B7176;
+                    color: white;
+                    font-size: 14px;
+                    padding-top: 4px;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    padding-bottom: 4px;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                .articletitle{
+                    font-weight: 900;
+                    margin-bottom: 10px;
+                    &:hover{
+                        color: #017DD4;
+                    }
+                }
+                .articledate{
+                    font-size: 12px;
+                    color: gray;
+                    margin-bottom: 20px;
+                }
+                .articletext{
+                    font-size: 14px;
+                }
+            }
+        }
     }
+}
+.inactivesidebarbackground{
+    display: none;
+}
+.activesidebarbackground{
+    z-index: 4;
+    position: fixed;
+    background-color: #334855;
+    opacity: 70%;
+    width: 100%;
+    height: 100%;
 }

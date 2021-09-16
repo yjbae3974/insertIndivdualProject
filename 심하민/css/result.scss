@@ -1,5 +1,7 @@
+@import "_variables.scss";
+
 .result{
-    background-color: beige;
+    background-color: $wh;
     border-radius: 25px;
     height: 80%;
     margin: 20% 5%;
@@ -8,15 +10,21 @@
         padding-top: 5%;
     }
     img{
-        width: 50%;
-        height: 50%;
+        width: 30%;
+        height: 30%;
     }
     .resultname{
+        background-color: $bl;
+        color: $wh;
         padding: 5% 5%;
         font-size: 20px;
+        width: 80%;
+        margin: 5%;
+        border-radius: 15px;
+        text-decoration: underline;
     }
     .resultDescription{
-        padding: 10% 10%;
+        padding: 5% 10%;
         font-size: 15px;
     }
     #restart{
@@ -25,5 +33,25 @@
         font-size: 20px;
         margin: 5% 5%;
         border-radius: 25px;
+        &:hover{
+            background-color: $gr;
+            color: white;
+        }
+    }
+    @media(min-width:630px){
+        margin: 5% 5%;
+        h1{
+            font-size: 35px;
+        }
+        .resultname{
+            font-size: 35px;
+        }
+        .resultDescription{
+            font-size: 25px;
+            padding: 5% 5%;
+        }
+        #restart{
+            margin-top:0%;
+        }
     }
 }

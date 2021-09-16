@@ -19,12 +19,16 @@ h1{
     transform: translate(-50%);
 }
 #grid{
-    margin: 10px auto;
+    margin: 10px; /*auto 생략 */
     border: 5px solid black;
     position: relative;
 }
+#grid div{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 div {
-    margin: 10px auto;
+    margin: 10px;
     border: 1px solid black;
     position: relative;
 }
