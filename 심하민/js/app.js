@@ -41,7 +41,6 @@ function calResult(){
         }
         return 0;
     });
-    console.log(resultArray)
     let resultword = resultArray[0].key;
     return resultword;
 }
@@ -67,7 +66,7 @@ function setResult(){
     let point = calResult();
     const imgdiv = document.querySelector('.resultImg');
     var resultImg = document.createElement('img');
-    var imgURL = 'img/image-' + point + '.png';
+    var imgURL = 'img/image_' + (point+1) + '.png';
     resultImg.src = imgURL;
     resultImg.alt = point;
     resultImg.classList.add("imgList");
@@ -97,15 +96,22 @@ function goNext(qNum){
     for (i in qnaList[qNum].a){
         addAnswer(qnaList[qNum].a[i].answer, qNum, i);
     }
-    var status = document.querySelector(".statusbar");
-    var statusSmall = document.querySelector(".statusbarSmall");
+    const status = document.querySelector(".statusbar");
+    const statusSmall = document.querySelector(".statusbarSmall");
+    const state = document.querySelector(".state")
     let percent = 100/end*(qNum+1);
     status.style.width = percent+'%';
-    status.style.opacity = percent*0.01;
+    //status.style.opacity = percent*0.01;
     status.innerHTML = "현재 진행률 : " + parseInt(percent) + "%" ;
     statusSmall.style.width = percent+'%';
-    statusSmall.style.opacity = percent*0.01;
+    // statusSmall.style.opacity = percent*0.01;
     statusSmall.innerHTML = parseInt(percent) + "%" ;
+    if (percent<20){
+        status.style.fontSize = "8px";
+    }
+    else{
+        status.style.fontSize = "15px";
+    }
 }
 
 function starttest(){
@@ -117,8 +123,9 @@ function starttest(){
 function restartTest(){
     main.classList.remove(HIDDEN_CLASSNAME);
     result.classList.add(HIDDEN_CLASSNAME);
-    const imgList = document.querySelector(".imgList");
-    imgList.classList.add(HIDDEN_CLASSNAME);
+    const imgList = document.querySelectorAll(".imgList");
+    for (let i=0;i<imgList.length;i++)
+    imgList[i].classList.add(HIDDEN_CLASSNAME);
 }
 
 start.addEventListener("click", starttest);

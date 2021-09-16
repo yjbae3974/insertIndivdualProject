@@ -6,6 +6,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 a {
@@ -15,6 +18,7 @@ a {
 }
 
 .header {
+  z-index: 3;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 40px 90px;
@@ -33,6 +37,7 @@ a {
 }
 
 .mobileheader {
+  z-index: 3;
   width: 100%;
   position: fixed;
   height: 55px;
@@ -54,6 +59,7 @@ a {
 }
 
 .activeheader {
+  z-index: 3;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 40px 400px;
@@ -61,6 +67,7 @@ a {
   width: 100%;
   height: 440px;
   position: fixed;
+  border-bottom: black 1px solid;
 }
 
 .nav1 {
@@ -209,8 +216,8 @@ a {
   width: 550.453px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (110px)[5];
-      grid-template-columns: repeat(5, 110px);
+  -ms-grid-columns: 110px 110px 110px 110px 110px;
+      grid-template-columns: 110px 110px 110px 110px 110px;
   height: 300px;
 }
 
@@ -235,20 +242,38 @@ a {
   margin-bottom: 20px;
 }
 
+.activesubmenu .submenuitemcontainer .subcolumn .scl:hover {
+  color: #017DD4;
+}
+
 .activesubmenu .etcsizer {
   width: 100.625px;
 }
 
+.sidebarcontainer {
+  width: 100%;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 .activesidebar {
+  position: fixed;
   margin-left: auto;
   background-color: #0174B7;
-  height: auto;
+  height: 100vh;
+  overflow-y: auto;
   width: 235px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 50px auto;
       grid-template-rows: 50px auto;
-  z-index: 0;
+  z-index: 5;
+  float: right;
 }
 
 .activesidebar .sidebar-top {
@@ -269,10 +294,24 @@ a {
   display: -ms-grid;
   display: grid;
   grid-auto-rows: 34px;
+  overflow-y: auto;
 }
 
 .activesidebar .sidebarmain .sidebaritems {
   color: white;
+  border-bottom: #01659F 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+.activesidebar .sidebarmain .sidebaritems:hover {
+  color: #0165C3;
   border-bottom: #01659F 1px solid;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,5 +338,317 @@ a {
 
 .inactivesidebar {
   display: none;
+}
+
+.mobilemain {
+  z-index: 0;
+  position: absolute;
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobilemain .banners {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 340px 340px;
+      grid-template-columns: 340px 340px;
+  -ms-grid-rows: 500px 240px 220px;
+      grid-template-rows: 500px 240px 220px;
+  grid-gap: 20px;
+  margin-bottom: 10px;
+}
+
+.mobilemain .banners .banner1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.mobilemain .banners .banner2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.mobilemain .banners .banner3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.mobilemain .banners .banner4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.mobilemain .articles {
+  width: 700px;
+  height: 1000px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 340px 340px;
+      grid-template-columns: 340px 340px;
+  grid-gap: 20px;
+  margin-top: 10px;
+}
+
+.mobilemain .articles .articlecolumns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobilemain .articles .articlecolumns .articlebox {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.mobilemain .articles .articlecolumns .articlebox .notice {
+  background-color: #4390EF;
+  color: white;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.mobilemain .articles .articlecolumns .articlebox .jobinfo {
+  background-color: #C11444;
+  color: white;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.mobilemain .articles .articlecolumns .articlebox .labs {
+  background-color: #6B7176;
+  color: white;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.mobilemain .articles .articlecolumns .articlebox .articletitle {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.mobilemain .articles .articlecolumns .articlebox .articletitle:hover {
+  color: #017DD4;
+}
+
+.mobilemain .articles .articlecolumns .articlebox .articledate {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.mobilemain .articles .articlecolumns .articlebox .articletext {
+  font-size: 14px;
+}
+
+.main {
+  z-index: 0;
+  position: absolute;
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .banners {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 340px 340px;
+      grid-template-columns: 340px 340px;
+  -ms-grid-rows: 500px 240px 220px;
+      grid-template-rows: 500px 240px 220px;
+  grid-gap: 20px;
+  margin-right: 10px;
+}
+
+.main .banners .banner1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.main .banners .banner2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.main .banners .banner3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.main .banners .banner4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.main .articles {
+  overflow-y: auto;
+  width: 700px;
+  height: 1000px;
+  margin-left: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 340px 340px;
+      grid-template-columns: 340px 340px;
+  grid-gap: 20px;
+}
+
+.main .articles .articlecolumns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .articles .articlecolumns .articlebox {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.main .articles .articlecolumns .articlebox .notice {
+  background-color: #4390EF;
+  color: white;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.main .articles .articlecolumns .articlebox .jobinfo {
+  background-color: #C11444;
+  color: white;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.main .articles .articlecolumns .articlebox .labs {
+  background-color: #6B7176;
+  color: white;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.main .articles .articlecolumns .articlebox .articletitle {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.main .articles .articlecolumns .articlebox .articletitle:hover {
+  color: #017DD4;
+}
+
+.main .articles .articlecolumns .articlebox .articledate {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.main .articles .articlecolumns .articlebox .articletext {
+  font-size: 14px;
+}
+
+.inactivesidebarbackground {
+  display: none;
+}
+
+.activesidebarbackground {
+  z-index: 4;
+  position: fixed;
+  background-color: #334855;
+  opacity: 70%;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
