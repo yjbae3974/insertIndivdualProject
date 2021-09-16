@@ -106,7 +106,7 @@ function goNext(qNum){
     statusSmall.style.width = percent+'%';
     // statusSmall.style.opacity = percent*0.01;
     statusSmall.innerHTML = parseInt(percent) + "%" ;
-    if (percent<10){
+    if (percent<20){
         status.style.fontSize = "8px";
     }
     else{
