@@ -44,24 +44,24 @@
                 </div>
             </div>
             <div class="bottom">
-                <div class="item">2021학년도 2학기</div>
-                <div class="item">2021-2nd Semester</div>
+                <div class="item border">2021학년도 2학기</div>
+                <div class="item right">2021-2nd Semester</div>
 
-                <div class="item">Credit Limit</div>
-                <div class="item">
-                    <div>19</div>
-                    <div>학점</div>
+                <div class="item border">Credit Limit</div>
+                <div class="item right">
+                    <div class="number">19</div>
+                    <div>&nbsp;학점</div>
                 </div>
 
-                <div class="item">Student ID</div>
-                <div class="item popup-id"></div>
+                <div class="item border">Student ID</div>
+                <div class="item popup-id right"></div>
 
-                <div class="item">Grade</div>
-                <div class="item">2</div>
+                <div class="item border">Grade</div>
+                <div class="item right">2</div>
 
                 <div class="item">
-                    <div>College</div>
-                    <div>
+                    <div class="border">College</div>
+                    <div class="move">
                         <div>엘텍공과대학</div>
                         <div>ELTEC College of Engineering</div>
                         <div>소프트웨어학부</div>
@@ -71,8 +71,8 @@
                     </div>
                 </div>
 
-                <div class="item">BA&MA Prgm 학석사연계</div>
-                <div class="item">N</div>
+                <div class="item border">BA&MA Prgm 학석사연계</div>
+                <div class="item right">N</div>
 
             </div>
 
@@ -83,8 +83,7 @@
             </div>
         </div>
         <div class="home">
-            <div class="banner"><img src="https://sugang.ewha.ac.kr/resources/img/contents/img-home.jpg" alt="img">
-            </div>
+            <div class="banner"></div>
             <div class="notice">
                 <div class="n-title">
                     <div class="n-bigtitle">수강신청 유의사항</div>
@@ -157,7 +156,57 @@
             </div>
 
         </div>
-        <div class="curriculum hidden"></div>
+        <div class="curriculum hidden">
+            <div class="cur-logo">
+                <img src="https://eureka.ewha.ac.kr/eureka/my/nxc/_theme_/theme/base/my2019/workFrame/navi_home.png"
+                    alt="img">
+                <span>교과과정안내</span>
+            </div>
+
+            <div class="cur-select">
+                <div>대학</div>
+                <select id="college">
+                    <option value="1">엘텍공과대학</option>
+                </select>
+                <div>학부/학과</div>
+                <select id="faculty">
+                    <option value="1">소프트웨어학부</option>
+                </select>
+                <div>전공</div>
+                <select id="major">
+                    <option value="1">컴퓨터공학</option>
+                </select>
+                <button class="newpage">
+                    <img src="https://eureka.ewha.ac.kr/eureka/my/nxc/_theme_/theme/base/btn_WF_ExcelN.png" alt="img">
+                    <span>출력</span>
+                </button>
+            </div>
+            <div class="notice">
+                <div class="notice-logo">
+                    <img src="https://eureka.ewha.ac.kr/eureka/my/nxc/_theme_/theme/base/my2019/workFrame/help_bullet_08.png"
+                        alt="img">
+                    <span>안내</span>
+                </div>
+                <div class="notice-text">
+                    <p>1.본인의 교과과정년도 이후 모든 전공의 교과과정을 조회할 수 있습니다.<br>&nbsp;
+                        교과과정 운영상 영역제목 변경, 교과목 추가 또는 폐지가 있을 수 있으며,<br>&nbsp;
+                        교과목의 변경 관련사항은 해당 대학 행정실 또는 전공(학과)사무실로 문의바랍니다.</p>
+                    <p>&emsp;▣ 교과과정년도란?</p>
+                    <p class="box">1.일반학생 : 입학년도<br>
+                        2.편입생 : 입학년도 -2(단, 약학대학 편입생은 편입학한 학년도)<br>
+                        3.재입학 또는 입학년도에 연속하여 두 학기 휴학 등으로 입학년도와 달리 교과과정년도가 변경된 경우<br>&nbsp;
+                        학적팀에서 부여받은 교과과정년도(단, 입학 후 첫 학기 휴학하고 2학기 복학 시 변동없음)<br>&nbsp;
+                        - 주전공 : 교양과목 및 전공 관련 교과목 조회 가능<br>&nbsp;
+                        - 복수전공 : 복수전공 이수 시 이수하여야 할 학점과 교과목 조회 가능<br>&nbsp;
+                        - 부전공 : 부전공 이수 시 이수하여야 할 학점과 교과목 조회 가능<br>&nbsp;
+                        - 교직과정 : 해당 전공의 교직 이수 시 이수하여야 할 학점과 교과목, 기타 이수요건 조회 가능</p>
+                    <p>2.연계/융합전공 조회<br>&nbsp;
+                        [대학:교무처, 학부/학과:수업지원팀 또는 교무과(2015이전), 전공:해당 연계/융합전공]을<br>&nbsp;
+                        선택하여야 복수전공이나 부전공을 조회할 수 있습니다.</p>
+                </div>
+            </div>
+
+        </div>
         <div class="wishlist hidden"></div>
         <div class="course-registeration hidden"></div>
         <div class="time-table hidden"></div>

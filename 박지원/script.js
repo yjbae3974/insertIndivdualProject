@@ -4,8 +4,8 @@ function user_login() {
     var user_name = document.getElementById("name").value;
     var user_id = document.getElementById("stdid").value;
 
-    localStorage.setItem('user_name',user_name);
-    localStorage.setItem('user_id',user_id);
+    localStorage.setItem('user_name', user_name);
+    localStorage.setItem('user_id', user_id);
 
     if (user_name && user_id) {
         alert(user_id + " " + user_name + "님 환영합니다.");

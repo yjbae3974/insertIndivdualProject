@@ -89,8 +89,16 @@ const logout = document.querySelector(".logout");
 logout.addEventListener("click", user_logout)
 
 function user_logout() {
-    if (confirm("로그아웃 하시겠습니까?")){
-            location.assign("index.html");
-        }
-        else {}
-    }
+    if (confirm("로그아웃 하시겠습니까?")) {
+        location.assign("index.html");
+    } else {}
+}
+
+const newpage = document.querySelector(".newpage");
+newpage.addEventListener("click", new_page);
+
+function new_page() {
+    var link = 'page2.html';
+    var popOption = "top=150, left=300, width=910, height=300, status=no, menubar=no, toolbar=no, resizable=no";
+    window.open(link, "showlecture", popOption);
+}
