@@ -216,8 +216,8 @@ a {
   width: 550.453px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: repeat 110px 110px 110px 110px 110px;
-      grid-template-columns: repeat 110px 110px 110px 110px 110px;
+  -ms-grid-columns: 110px 110px 110px 110px 110px;
+      grid-template-columns: 110px 110px 110px 110px 110px;
   height: 300px;
 }
 
