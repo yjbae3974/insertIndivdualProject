@@ -41,7 +41,6 @@ function calResult(){
         }
         return 0;
     });
-    console.log(resultArray)
     let resultword = resultArray[0].key;
     return resultword;
 }
@@ -67,7 +66,7 @@ function setResult(){
     let point = calResult();
     const imgdiv = document.querySelector('.resultImg');
     var resultImg = document.createElement('img');
-    var imgURL = 'img/image_' + point + '.png';
+    var imgURL = 'img/image_' + (point+1) + '.png';
     resultImg.src = imgURL;
     resultImg.alt = point;
     resultImg.classList.add("imgList");
@@ -117,8 +116,9 @@ function starttest(){
 function restartTest(){
     main.classList.remove(HIDDEN_CLASSNAME);
     result.classList.add(HIDDEN_CLASSNAME);
-    const imgList = document.querySelector(".imgList");
-    imgList.classList.add(HIDDEN_CLASSNAME);
+    const imgList = document.querySelectorAll(".imgList");
+    for (let i=0;i<imgList.length;i++)
+    imgList[i].classList.add(HIDDEN_CLASSNAME);
 }
 
 start.addEventListener("click", starttest);
