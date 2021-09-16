@@ -12,8 +12,10 @@ function addVocaSet(voca, meaning) {
     var li = document. createElement("li");
     li. appendChild(document. createTextNode(voca + '\t' + meaning));
     ul. appendChild(li);
-
-    removeButton(li);
+    var button = document.createElement("button");
+    li.appendChild(button);
+    button.innerText = "X";
+    button.addEventListener("click", removeButton);
     }
 
 function plusClicked(){
@@ -25,29 +27,32 @@ function plusClicked(){
     }
     else{
         addVocaSet(addVocabulary, addMeaning);
-        // removeButton();
     }
 }
     
-
-function createRemoveButton(){
-    var remove_btn = documnet.createElement("BUTTON");
-    remove_btn.id 
+function removeButton(event){
+    var removingOne = event.target.parentElement;
+    removingOne.remove();
 }
 
-function removeButton(li){
-    list = document.querySelectorAll('li');
-    // var remove_btn;
-    var remove_btn = document.createElement("BUTTON");
-    remove_btn.id = i;
-    remove_btn.className = "remove";
-    remove_btn.onclick = function(){
-        removeChild(remove_btn.id);
-    };
-    for(var i = 0; i < list.length; i++){
-        list[i].appendChild(remove_btn);
-    }    
-}
+// function createRemoveButton(){
+//     var remove_btn = documnet.createElement("BUTTON");
+//     remove_btn.id 
+// }
+
+// function removeButton(li){
+//     list = document.querySelectorAll('li');
+//     // var remove_btn;
+//     var remove_btn = document.createElement("BUTTON");
+//     remove_btn.id = i;
+//     remove_btn.className = "remove";
+//     remove_btn.onclick = function(){
+//         removeChild(remove_btn.id);
+//     };
+//     for(var i = 0; i < list.length; i++){
+//         list[i].appendChild(remove_btn);
+//     }    
+// }
 
 // var input = document.getElementById('vocabulary') + '\t' + document.getElementById('meaning');
 // var button = document.getElementById('plus');
