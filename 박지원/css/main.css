@@ -30,10 +30,13 @@ body .container {
     height: 530px;
     padding-top: 75px;
     padding-left: 990px;
-    box-sizing: border-box; /*padding-left때문에 div의 크기가 변형되는 것을 방지*/
-    background-color: khaki; /*background-image가 불투명하더라도 이미지를 불러올 수 없는 상황에 대비하여 배경 색을 지정해 놓는 것이 좋다*/
+    box-sizing: border-box;
+    /*padding-left때문에 div의 크기가 변형되는 것을 방지*/
+    background-color: khaki;
+    /*background-image가 불투명하더라도 이미지를 불러올 수 없는 상황에 대비하여 배경 색을 지정해 놓는 것이 좋다*/
     background-image: url("https://sugang.ewha.ac.kr/resources/img/login/bg-img.jpg");
-    background-size: cover; /*image를 최대한 확대*/
+    background-size: cover;
+    /*image를 최대한 확대*/
 }
 
 
@@ -62,7 +65,10 @@ body .container {
 }
 
 .title .subtitle {
+    color: darkgray;
     font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
 }
 
 .login {
@@ -79,11 +85,13 @@ body .container {
     width: 160px;
     height: 35px;
     margin-bottom: 9px;
+    padding-left: 9px;
 }
 
 .input .studentid {
     width: 160px;
     height: 35px;
+    padding-left: 9px;
 }
 
 .login .log-btn {
@@ -93,7 +101,18 @@ body .container {
     background-color: rgb(255, 138, 4);
 }
 
-.log-btn:hover{
+.log-btn .btn-text1 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.log-btn .btn-text2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+}
+
+.log-btn:hover {
     border-color: rgb(218, 118, 4);
     background-color: rgb(218, 118, 4);
     cursor: pointer;
@@ -103,21 +122,22 @@ body .container {
     width: 1350px;
     height: 700px;
     padding: 70px 0px 0px 160px;
+    font-family: "Segoe UI", "맑은 고딕", sans-serif;
 }
 
-.notice .n-title{
+.notice .n-title {
     display: flex;
 }
 
-.n-title .n-bigtitle{
+.n-title .n-bigtitle {
     font-size: 25px;
-} 
+}
 
-.n-title .n-subtitle{
+.n-title .n-subtitle {
     font-size: 16px;
     padding-left: 5px;
     padding-top: 10px;
-} 
+}
 
 .content {
     display: flex;
@@ -125,11 +145,26 @@ body .container {
 }
 
 .content .box {
+    font-size: 14px;
+    font-family: "Segoe UI", "맑은 고딕", sans-serif;
     width: 570px;
-    height: 450px;
+    height: 400px;
     padding: 20px 20px 20px 20px;
     margin-right: 20px;
     border: lightgray solid 0.5px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.orange {
+    font-weight: bold;
+    color: #ff8430;
+}
+
+.bolder {
+    font-weight: bold;
 }
 
 p::before {
@@ -137,4 +172,3 @@ p::before {
     font-size: 20px;
     color: rgb(109, 214, 4);
 }
-

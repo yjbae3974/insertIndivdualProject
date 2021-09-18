@@ -78,9 +78,9 @@ ul {
 }
 
 .main {
-    width: 1500px;
+    width: 1380px;
     margin-left: 120px;
-    position: relative;
+    /* position: relative; */
 }
 
 .popup {
@@ -89,9 +89,10 @@ ul {
     background-color: #ffffff;
     border: lightgray solid 1px;
     border-radius: 10px;
+    font-family: "Segoe UI", "맑은 고딕", sans-serif;
     margin-left: 15px;
     z-index: 1;
-    position: absolute;
+    position: fixed;
 }
 
 .top {
@@ -121,31 +122,75 @@ ul {
     margin-left: 100px;
 }
 
-.logout:hover{
+.logout:hover {
     cursor: pointer;
 }
 
-.logout > .big {
+.logout>.big {
     font-size: 15px;
     font-weight: bold;
     color: #ffffff;
 }
 
-.logout > .small {
+.logout>.small {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
 }
 
 .bottom {
+    font-size: 15px;
     margin-left: 30px;
     display: grid;
     grid-template-rows: 70px 70px 70px 70px 130px 70px;
     grid-template-columns: 180px 140px;
 }
 
-.bottom .item {
-    border-bottom: red solid 1px;
+.bottom .right {
     display: flex;
+    justify-content: flex-end;
+}
+
+.border {
+    font-weight: bolder;
+}
+
+.bottom .item {
+    border-bottom: lightgray solid 1px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom .item:nth-child(1) {
+    color: #ff8430;
+}
+
+.bottom .item:nth-child(2) {
+    color: #ff8430;
+}
+
+
+.bottom .move {
+    text-align: right;
+    padding-left: 35px;
+}
+
+.bottom .item:nth-child(10) {
+    border: none;
+}
+
+.bottom .item:nth-child(11) {
+    border: none;
+}
+
+.bottom .number {
+    width: 25px;
+    height: 25px;
+    border: #ff8430 solid 1px;
+    border-radius: 90px;
+    background-color: #ff8430;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -156,21 +201,14 @@ ul {
 .header {
     width: 100%;
     height: 60px;
-    /* margin-left: 120px; */
-    background-color: #fff;
+    background-color: #ffffff;
     border-right: lightgray solid 0.5px;
     border-left: lightgray solid 0.5px;
     border-bottom: lightgray solid 0.5px;
-    padding-left: 30px;
+    padding-left: 20px;
     display: flex;
     align-items: center;
     position: fixed;
-
-}
-
-.header .logo {
-    width: 100%;
-    height: 60px;
 }
 
 .home-btn {
@@ -190,17 +228,19 @@ ul {
 }
 
 .home {
-    /* margin-left: 120px; */
+    width: 1360px;
+    margin: 90px 0px 0px 20px;
 }
 
 .banner {
     width: 1360px;
-    overflow: hidden;
-    margin: 90px 30px 20px 20px;
+    height: 280px;
+    background-image: url("https://sugang.ewha.ac.kr/resources/img/contents/img-home.jpg");
 }
 
 .notice {
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    font-family: "Segoe UI", "맑은 고딕", sans-serif;
 }
 
 .n-title {
@@ -210,7 +250,7 @@ ul {
 }
 
 .n-title .n-bigtitle {
-    font-size: 25px;
+    font-size: 26px;
     padding-left: 5px;
 }
 
@@ -227,16 +267,77 @@ ul {
     border: lightgray solid 0.5px;
 }
 
-p::before {
+h4 {
+    margin-bottom: 8px;
+}
+
+.home p {
+    margin: 8px 8px;
+    font-size: 14px;
+}
+
+.home p::before {
     content: "> ";
     font-size: 20px;
     color: rgb(109, 214, 4);
 }
 
 .curriculum {
-    width: 100%;
-    height: 100%;
+    width: 1360px;
+    margin: 90px 0px 0px 20px;
+}
+
+.cur-logo span {
+    font-size: 15px;
+}
+
+.cur-select {
+    width: 1330px;
+    height: 70px;
+    font-size: 13px;
+    padding-left: 30px;
+    border: lightgray solid 0.5px;
+    border-radius: 5px;
     background-color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.cur-select select {
+    width: 180px;
+    height: 24px;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.cur-select .newpage {
+    margin-left: 400px;
+}
+
+.notice-logo span {
+    font-size: 15px;
+}
+
+.notice .notice-text {
+    width: 1330px;
+    height: 430px;
+    border: lightgray solid 0.5px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 14px;
+    font-family: "Segoe UI", "맑은 고딕", sans-serif;
+    line-height: 1.7;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 15px 10px 15px;
+}
+
+.notice-text .box {
+    border: lightgray solid 0.5px;
+    padding: 10px 7px 10px 7px;
 }
 
 .wishlist {
@@ -248,11 +349,11 @@ p::before {
 .course-registeration {
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-color: rgb(252, 215, 168);
 }
 
 .time-table {
     width: 100%;
     height: 100%;
-    background-color: aquamarine;
+    background-color: rgb(248, 182, 95);
 }
