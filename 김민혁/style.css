@@ -4,11 +4,11 @@ h1{
     border-bottom: black 1px solid;
 }
 
-#vocabularySets{
+.vocabularySets{
     column-count: 2;
 }
 
-#vocabularySets:after {
+.vocabularySets:after {
     content:"";
     position: absolute;
     z-index: -1;
@@ -18,12 +18,12 @@ h1{
     border-left: 2px dotted red;
     transform: translate(-50%);
 }
-#grid{
+.frame{
     margin: 10px; /*auto 생략 */
     border: 5px solid black;
     position: relative;
 }
-#grid div{
+.frame div{
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -33,11 +33,15 @@ div {
     position: relative;
 }
 
+li button{
+    margin-left: 15px;
+}
+
 @media(max-width: 576px){
-    #vocabularySets{
+    .vocabularySets{
         column-count: 1;
     }
-    #vocabularySets:after{
+    .vocabularySets:after{
         border-left: none;
     }
     /* #grid{

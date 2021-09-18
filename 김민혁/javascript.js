@@ -6,31 +6,79 @@
         // 'border-right': 'solid black 1px'
     // });
 // }
+let vocas = [];
 
 function addVocaSet(voca, meaning) {
-    var ul = document. getElementById("vocabularySets");
+    var vocaSet = new Object();
+    // var ul = document. getElementsByClassName("vocabularySets")[0];
+    // var li = document. createElement("li");
+    vocaSet.voca = voca;
+    vocaSet.meaning = meaning;
+    vocas.push(vocaSet);
+    // li. appendChild(document. createTextNode(voca + '\t' + meaning));
+    // ul. appendChild(li);
+    // var button = document.createElement("button");
+    // li.appendChild(button);
+    // button.innerText = "X";
+    // button.addEventListener("click", removeButton);
+}
+
+
+// function addVocaSet(voca, meaning) {
+//     var vocaSet = new Object();
+//     var ul = document. getElementsByClassName("vocabularySets")[0];
+//     var li = document. createElement("li");
+//     vocaSet.voca = voca;
+//     vocaSet.meaning = meaning;
+//     vocas.push(vocaSet);
+//     li. appendChild(document. createTextNode(voca + '\t' + meaning));
+//     ul. appendChild(li);
+//     var button = document.createElement("button");
+//     li.appendChild(button);
+//     button.innerText = "X";
+//     button.addEventListener("click", removeButton);
+// }
+
+
+function showVocaSet(){
+    var ul = document. getElementsByClassName("vocabularySets")[0];
     var li = document. createElement("li");
+    for
     li. appendChild(document. createTextNode(voca + '\t' + meaning));
     ul. appendChild(li);
     var button = document.createElement("button");
     li.appendChild(button);
     button.innerText = "X";
-    button.addEventListener("click", removeButton);
-    }
+    button.addEventListener("click", removeButton);//remove버튼에 array에서도 지우는 기능 추가
+}
+
 
 function plusClicked(){
-    var addVocabulary = document.getElementById('vocabulary').value;
-    var addMeaning = document.getElementById('meaning').value;
+    var addVocabulary = document.getElementsByClassName('vocabulary')[0].value;
+    var addMeaning = document.getElementsByClassName('meaning')[0].value;
 
     if (!addVocabulary | !addMeaning){
         alert('fill the blank!');
     }
     else{
-        addVocaSet(addVocabulary, addMeaning);
+        if(vocas.find(obj => {return obj.voca === addVocabulary})){
+            if(vocas.find(obj => {return obj.meaning === addMeaning})){
+                alert("already have same voca!");
+            }
+            else{
+                vocas[vocas.find(obj => {return obj.voca === addVocabulary})].meaning += ", " + addMeaning;
+                showVocaSet();
+            }
+        }
+        else{
+            addVocaSet(addVocabulary, addMeaning);
+            showVocaSet();
+        }
     }
 }
+
     
-function removeButton(event){
+function removeButton(event){//remove버튼에 array에서도 지우는 기능 추가
     var removingOne = event.target.parentElement;
     removingOne.remove();
 }
