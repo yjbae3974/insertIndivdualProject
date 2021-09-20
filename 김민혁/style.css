@@ -1,7 +1,7 @@
 h1{
     text-align: center;
     color: blue;
-    border-bottom: black 1px solid;
+    /* border-bottom: black 1px solid; */
 }
 
 .vocabularySets{
@@ -17,6 +17,9 @@ h1{
     left: 50%;
     border-left: 2px dotted red;
     transform: translate(-50%);
+}
+.reset{
+    margin-left: 30px;
 }
 .frame{
     margin: 10px; /*auto 생략 */

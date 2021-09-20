@@ -6,23 +6,35 @@
         // 'border-right': 'solid black 1px'
     // });
 // }
-let vocas = [];
+let vocas = new Array();
+// let lis = new Array();
 
 function addVocaSet(voca, meaning) {
     var vocaSet = new Object();
-    // var ul = document. getElementsByClassName("vocabularySets")[0];
-    // var li = document. createElement("li");
+    var ul = document. getElementsByClassName("vocabularySets")[0];
+    var li = document. createElement("li");
     vocaSet.voca = voca;
     vocaSet.meaning = meaning;
     vocas.push(vocaSet);
-    // li. appendChild(document. createTextNode(voca + '\t' + meaning));
-    // ul. appendChild(li);
-    // var button = document.createElement("button");
-    // li.appendChild(button);
-    // button.innerText = "X";
-    // button.addEventListener("click", removeButton);
+    li. appendChild(document. createTextNode(vocaSet.voca + '\t' + vocaSet.meaning));
+    ul. appendChild(li);
+    var button = document.createElement("button");
+    li.appendChild(button);
+    button.innerText = "X";
+    button.addEventListener("click", removeButton);
 }
 
+function modifyVocaSet(voca, meaning){
+    var ul = document. getElementsByClassName("vocabularySets")[0];
+    var liIndex =  vocas.findIndex(obj => {return obj.voca === voca});
+    // console.log(a);
+    // console.log($("ul li:nth-child("+a+")").firstChild);
+    ul.children[liIndex].childNodes[0].nodeValue = voca + "\t" + meaning;
+    console.log(ul.children[liIndex].childNodes[0]);
+    //  = voca + "\t" + meaning;
+    // innerText = voca + "\t" + meaning;
+}
+//vocas.findIndex(obj => {return obj.voca === voca})
 
 // function addVocaSet(voca, meaning) {
 //     var vocaSet = new Object();
@@ -40,47 +52,68 @@ function addVocaSet(voca, meaning) {
 // }
 
 
-function showVocaSet(){
-    var ul = document. getElementsByClassName("vocabularySets")[0];
-    var li = document. createElement("li");
-    for
-    li. appendChild(document. createTextNode(voca + '\t' + meaning));
-    ul. appendChild(li);
-    var button = document.createElement("button");
-    li.appendChild(button);
-    button.innerText = "X";
-    button.addEventListener("click", removeButton);//remove버튼에 array에서도 지우는 기능 추가
-}
+// function showVocaSet(){
+//     for (i = 0; i < array.length; i++)
+//     document.writeln((i+1) + ": " + array[i]);
+//     var ul = document. getElementsByClassName("vocabularySets")[0];
+//     var li = document. createElement("li");
+//     for
+//     li. appendChild(document. createTextNode(voca + '\t' + meaning));
+//     ul. appendChild(li);
+//     var button = document.createElement("button");
+//     li.appendChild(button);
+//     button.innerText = "X";
+//     button.addEventListener("click", removeButton);//remove버튼에 array에서도 지우는 기능 추가
+// }
 
 
 function plusClicked(){
-    var addVocabulary = document.getElementsByClassName('vocabulary')[0].value;
-    var addMeaning = document.getElementsByClassName('meaning')[0].value;
+    var addVocabulary = document.getElementsByClassName('vocabulary')[0].value.trim();
+    var addMeaning = document.getElementsByClassName('meaning')[0].value.trim();
 
     if (!addVocabulary | !addMeaning){
         alert('fill the blank!');
     }
     else{
         if(vocas.find(obj => {return obj.voca === addVocabulary})){
-            if(vocas.find(obj => {return obj.meaning === addMeaning})){
+
+            var splitMeaning = vocas[vocas.findIndex(obj => {return obj.voca === addVocabulary})].meaning.split(/[\s,]+/);
+            var accord = false;
+            for(var i = 0; i < splitMeaning.length; i++){
+                if(splitMeaning[i] === addMeaning){
+                    accord = true;
+                    break;
+                }
+            }
+
+            if(accord){
                 alert("already have same voca!");
+
             }
             else{
-                vocas[vocas.find(obj => {return obj.voca === addVocabulary})].meaning += ", " + addMeaning;
-                showVocaSet();
+                vocas[vocas.findIndex(obj => {return obj.voca === addVocabulary})].meaning = vocas[vocas.findIndex(obj => {return obj.voca === addVocabulary})].meaning + ", " + addMeaning;
+                modifyVocaSet(vocas[vocas.findIndex(obj => {return obj.voca === addVocabulary})].voca, vocas[vocas.findIndex(obj => {return obj.voca === addVocabulary})].meaning);
+                // showVocaSet();
             }
         }
         else{
             addVocaSet(addVocabulary, addMeaning);
-            showVocaSet();
+            // showVocaSet();
         }
     }
 }
 
     
 function removeButton(event){//remove버튼에 array에서도 지우는 기능 추가
+    console.log(vocas.findIndex(obj => {return obj.voca === event.target.parentElement.innerText.split(' ')[0]}));
+    vocas.splice(vocas.findIndex(obj => {return obj.voca === (event.target.parentElement.innerText.split(' ')[0])}), 1);
     var removingOne = event.target.parentElement;
     removingOne.remove();
+}
+
+function reset(){
+    vocas = [];
+    document.getElementsByClassName('vocabularySets')[0].innerHTML = '';
 }
 
 // function createRemoveButton(){
