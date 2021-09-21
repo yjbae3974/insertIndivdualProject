@@ -7,7 +7,6 @@
     <title>Vocabulary</title>
     <link rel = "stylesheet" href = "style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src = "javascript.js"></script>
 </head>
 <body>
     <div class = "frame">
@@ -21,17 +20,14 @@
                 <!-- <button type = "button" id = "plus" onclick = "clickButton()">+</button> -->
             </center>
         </div>
-        <fieldset>
-            <div class = "vocabularySets">
-                <!-- <script>
-                    showVocaSet();
-                </script> -->
-            </div>
-        </fieldset>
+        <div class = "vocabularySets">
+            <!-- <script>
+                console.log(document.getElementsByClassName('vocabularySets')[0].innerHTML);
+            </script> -->
+        </div>
         <!-- 여기에 object로 만든 단어들 담아서 저장할 수 있게끔 해야할 듯 -->
         <!-- <ul id = "vocabularySets"></ul> -->
     </div>
-    
-
+    <script src = "javascript.js"></script>
 </body>
 </html>
