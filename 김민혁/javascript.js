@@ -89,8 +89,11 @@ function removeButton(event){
 function reset(){
     vocas = [];
     ul.innerHTML = '';
-    //reset할 때 텍스트 입력창의 글자도 지워지면 좋겠는데 방법을 모르겠네
+    document.getElementsByClassName('vocabulary')[0].value = '';
+    document.getElementsByClassName('meaning')[0].value = '';
 }
+
+// console.log(localStorage.length);
 
     // console.log(document. getElementsByClassName("vocabularySets")[0].innerHTML)
 
