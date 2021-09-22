@@ -39,7 +39,7 @@
         }
     }
     @media(min-width:630px){
-        margin: 5% 5%;
+        margin: 5% 15%;
         h1{
             font-size: 35px;
         }
@@ -52,6 +52,12 @@
         }
         #restart{
             margin-top:0%;
+        }
+    }
+    @media(min-width: 1200px){
+        margin: 5% 20%; 
+        h1{
+            font-size: 45px;
         }
     }
 }

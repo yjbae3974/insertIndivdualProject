@@ -46,7 +46,7 @@
 
 @media (min-width: 630px) {
   .result {
-    margin: 5% 5%;
+    margin: 5% 15%;
   }
   .result h1 {
     font-size: 35px;
@@ -60,6 +60,15 @@
   }
   .result #restart {
     margin-top: 0%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .result {
+    margin: 5% 20%;
+  }
+  .result h1 {
+    font-size: 45px;
   }
 }
 /*# sourceMappingURL=result.css.map */

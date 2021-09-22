@@ -10,6 +10,9 @@
         margin-top:10%;
         background-color: $qbox;
         border-radius: 15px;
+        font-size: 30px;
+        border: 7px #D4DFE6;
+        border-style: dashed solid;
     }
     .qBox{
         text-align: center;
@@ -55,6 +58,14 @@
             font-size: 15px;
         }
     }
+    @media(max-width: 400px){
+        .qBox{
+            font-size: 22px;
+        }
+        .answerList{
+            font-size: 20px;
+        }
+    }
     @media(max-width: 500px){
         h1{
             font-size: 20px;
@@ -69,5 +80,36 @@
         }
         
     }
-    
+    @media(min-width: 700px){
+        width: 50%;
+        margin: 5% 15%;
+        .qBox{
+            font-size: 35px;
+        }
+        .answerList{
+            font-size: 28px;
+        }
+    }
+    @media(min-width: 1200px){ 
+        .qna{
+            margin-top: 4%;
+            padding-top: 2%;
+        }
+
+        h1{
+            margin: 2% 0%;
+            font-size: 40px
+        }
+        .qBox{
+            margin: 3% 0%;
+            padding: 2% 10%;
+            font-size: 40px;
+        }
+        .answerList{
+            font-size: 32px;
+        }
+        .statusbar{
+            font-size: 20px;
+        }
+    }
 }
