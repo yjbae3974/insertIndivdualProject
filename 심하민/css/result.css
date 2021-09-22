@@ -70,5 +70,8 @@
   .result h1 {
     font-size: 45px;
   }
+  .result #restart {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=result.css.map */

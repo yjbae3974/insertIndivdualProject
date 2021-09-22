@@ -55,7 +55,11 @@ function addAnswer(answerText, qNum, idx){
     answerButton.addEventListener("click", function (){
         var children = document.querySelectorAll('.answerList');
         for (let i = 0; i < children.length; i++){
-            children[i].classList.add(HIDDEN_CLASSNAME);
+            children[i].classList.add('remove');
+        }
+        var el = document.querySelectorAll('.remove')
+        for (let i = 0; i <el.length;i++){
+            el[i].remove();
         }
         select[qNum] = idx;
         goNext(++qNum);
