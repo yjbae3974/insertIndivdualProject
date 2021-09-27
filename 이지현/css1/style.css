@@ -70,7 +70,7 @@ body {
   background: #DB8F34;
   margin: -100px 390px;
   opacity: 0.4;
-  border: solid #DB8F34;
+  border: solid orangered 3px;
   position: relative;
   z-index: 3;
 }
@@ -99,10 +99,10 @@ body {
   border-radius: 15px;
   background: white;
   color: black;
-  font-size: 17px;
+  font-size: 20px;
   font-family: Miso, Arial, sans-serif;
   margin: 40px;
-  line-height: 170%;
+  line-height: 140%;
 }
 
 .head {
@@ -186,5 +186,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: Miso, Arial, sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
