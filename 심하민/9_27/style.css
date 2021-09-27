@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Nova+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: black;
+}
+
+body .poster {
+  margin-left: 584px;
+  width: 723px;
+  height: 960px;
+  background-color: white;
+  padding-top: 7px;
+}
+
+body .poster .inner {
+  width: 97%;
+  height: 950px;
+  margin-left: 1%;
+  background-color: #207a80;
+}
+
+body .poster .inner .inner_header {
+  width: 100%;
+  height: 20px;
+  background-color: #90bdc0;
+}
+
+body .poster .inner .circle {
+  background-color: #cae131;
+  position: absolute;
+  top: 60px;
+  left: 660px;
+  width: 400px;
+  height: 400px;
+  border-radius: 200px;
+  border: 14px solid #d5e75a;
+  z-index: 10;
+}
+
+body .poster .inner .three {
+  position: absolute;
+  top: 20px;
+  text-shadow: -5px 0 #cae131, 0 5px #cae131, 5px 0 #cae131, 0 -5px #cae131;
+  left: 730px;
+  color: white;
+  font-size: 400px;
+  font-style: italic;
+  font-weight: 600;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 20;
+}
+
+body .poster .inner h3 {
+  position: absolute;
+  font-size: 40px;
+  z-index: 30;
+  left: 860px;
+  top: 150px;
+  font-style: italic;
+  font-family: 'Orbitron', Arial, sans-serif;
+  text-transform: uppercase;
+  word-spacing: 65px;
+  font-weight: 700;
+}
+
+body .poster .inner h1 {
+  position: absolute;
+  z-index: 40;
+  top: 185px;
+  left: 680px;
+  font-size: 120px;
+  font-style: italic;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 5px 5px  white;
+}
+
+body .poster .inner h4 {
+  position: absolute;
+  padding: 10px 0px;
+  padding-right: 13px;
+  width: 303px;
+  top: 370px;
+  left: 975px;
+  right: 615px;
+  color: white;
+  background-color: rgba(255, 166, 0, 0.329);
+  border-radius: 40px 0px 0px 40px/ 40px 0px 0px 40px;
+  border: 2px solid orange;
+  border-right: none;
+  font-size: 30px;
+  text-align: right;
+  z-index: 30;
+  font-family: 'Sansation Regular', arial;
+}
+
+body .poster .inner ol {
+  margin-top: 480px;
+  margin-left: 60px;
+  padding: 5px 40px;
+  width: 493px;
+  height: 216px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  font-family: 'Miso', Arial, sans-serif;
+  font-size: 20px;
+}
+
+body .poster .inner ol li {
+  margin: 5px 8px;
+  letter-spacing: 0.2;
+  line-height: 30px;
+}
+
+body .poster .inner ol li:nth-child(1) {
+  margin-top: 10px;
+}
+
+body .poster .inner .face {
+  margin-top: 15px;
+  margin-left: 385px;
+  background-color: #0a2426;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 65px;
+  height: 100px;
+}
+
+body .poster .inner .face .left-eye {
+  position: absolute;
+  top: 780px;
+  left: 980px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #e0d931;
+  z-index: 10;
+}
+
+body .poster .inner .face .left-eye .left-pupil {
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: black;
+  z-index: 100;
+}
+
+body .poster .inner .face .right-eye {
+  position: absolute;
+  top: 780px;
+  left: 1015px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #e0d931;
+}
+
+body .poster .inner .face .right-eye .right-pupil {
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: black;
+}
+
+body .poster .inner .face .mouth {
+  position: absolute;
+  top: 820px;
+  left: 990px;
+  width: 32px;
+  height: 16px;
+  display: -ms-grid;
+  display: grid;
+  border: 1px solid white;
+  gap: 2px;
+  background-color: white;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+body .poster .inner .face .mouth .teeth {
+  background-color: #e0d931;
+}
+
+body .poster .inner .body {
+  margin-top: 10px;
+  width: 140px;
+  height: 90px;
+  border-radius: 20px 20px 0 0;
+  margin-left: 350px;
+  border: solid 2px white;
+  background-color: #0a2426;
+}
+
+body .poster .inner .body .tshirt {
+  position: absolute;
+  top: 885px;
+  left: 980px;
+  width: 50px;
+  height: 50px;
+  font-family: 'Miso', Arial, sans-serif;
+  color: white;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */
