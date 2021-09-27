@@ -1,0 +1,177 @@
+
+body{
+    background: white;
+}
+.content{ /*top/topwrapper/middlewrapper/bottomwrapper를 flex로 배치하기-->column방향으로*/
+    height:900px;
+    width:700px;
+    background: #207A80;
+    display:block;
+    overflow:hidden;
+
+}
+.top{
+    height:20px;
+    background:#90BDC0;
+    
+}
+
+.limecircle{
+    margin:20px 60px;
+    height:400px;
+    width:400px;
+    border-radius:50%;    
+    background:#CAE131;
+    position:absolute;
+    z-index:1;
+    border: 15px solid #D5E75A;
+    
+}
+
+.three{
+    color:white;
+    font-size: 400px;
+    font-family: 'Orbitron',Arial, sans-serif;
+    
+    position:absolute;
+    z-index:2;
+    font-style:italic;
+    -webkit-text-stroke-width: 5px;
+	-webkit-text-stroke-color: #CAE131;
+    margin: -70px 120px;
+}
+.lawsof{
+    color:black;
+    font-weight:bold;
+    font-size:50px;
+    font-family:'Orbitron', Arial, sans-serif;
+    font-style:italic;
+    position:absolute;
+    z-index:3;
+    margin:100px 240px;
+
+}
+.robotics{
+    color:black;
+    font-size:120px;
+    font-family:Orbitron, Arial, sans-serif;
+    font-style:italic;
+    text-shadow: 0px 1px white, 4px 4px 0px white;
+    position:relative;
+    z-index:3;
+    margin: 138px 90px;
+
+}
+.sidebox{
+    width:400px;
+    height:85px;
+    border-radius:50px;
+    color:white;
+    background:#DB8F34;
+    margin: -100px 390px;
+    opacity:0.4;
+    border:solid #DB8F34;
+    position:relative;
+    z-index:3;
+    
+}
+.sidetextbox{
+    font-size:26px;
+    font-family:Sansation,Arial, sans-seri;
+    position:relative;
+    z-index:4;
+    color:white;
+    margin: 25px 440px;
+    
+
+}
+.middlewrapper{
+    display:flex;
+    justify-content:center;
+    
+}
+.textbox{
+    width:580px;
+    height:210px;
+    border-radius: 15px;
+    background: white;
+    color:black;
+    font-size:17px;
+    font-family:Miso, Arial, sans-serif;
+    margin:40px;
+    line-height:170%;
+
+    
+}
+
+.head{
+    width:65px;
+    height:105px;
+    border-radius:50%;
+    background:#0A2426;
+    border:solid white;
+    margin:-30px 390px;
+    display:flex;
+    flex-direction:row;
+    
+}
+.lefteye{
+    width:20px;
+    height:20px;
+    background:#E0D931;
+    border-radius:50%;
+    margin: 25px 3px;
+}
+.lefteyeball{
+    width:9px;
+    height:9px;
+    background:black;
+    border-radius:50%;
+    margin: 7px 1px;
+}
+.righteye{
+    width:20px;
+    height:20px;
+    background:#E0D931;
+    border-radius:50%;
+    margin: 25px 10px;
+}
+.righteyeball{
+    width:9px;
+    height:9px;
+    background:black;
+    border-radius:50%;
+    margin: 6px 8px;
+}
+.teeth{
+    display:grid;
+    height:18px;
+    grid-template-columns:repeat(4,9px);
+    background:white;
+    grid-gap:1px;
+    margin:70px -58px;
+}
+.tooth{
+    background:#E0D931;
+    
+
+}
+.obey{
+    width:145px;
+    height:90px;
+    border-radius:15px;
+    background:#0A2426;
+    border:solid white;
+    margin: 35px 350px;
+    
+    color:white;
+    font-size:26px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    
+    
+}
+
+
