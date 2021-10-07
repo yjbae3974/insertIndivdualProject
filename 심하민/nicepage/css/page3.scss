@@ -1,0 +1,126 @@
+header{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(242,242,242);
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    .X{
+        margin-left: 150px;
+    }
+    a{
+        width: 40px;
+        height: 40px;
+        padding: 0px 5px;
+        padding-top: 20px;
+        &:hover{
+            background-color: rgb(206, 225, 245);
+        }
+    }
+    .left{
+        margin-left: 10px;
+    }
+}
+.main{
+    width: 100%;
+    height: 1600px;
+    background-color: rgb(229,229,229);
+    margin-top: 70px;
+}
+.nav{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    font-size: 0px;
+    .logo{
+        margin-left: 300px;
+    }
+    .page{
+        margin-left: 600px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 400;
+        padding-left: 30px;
+        &:hover{
+            color: red;
+        }
+        &:nth-child(3){
+            color: rgb(119,170,217);
+        }
+    }
+}
+.stripe{
+    margin-left: 705px;
+    margin-top: 60px;
+    width: 815px;
+    height: 980px;
+    background: repeating-linear-gradient(
+    -45deg,
+    rgb(37,32,88),
+    rgb(37,32,88) 5px,
+    #46529800 5px,
+    #46529800 20px
+    );
+}
+.women{
+    width: 1077px;
+    height: 720px;
+    margin-top: -920px;
+    margin-left: 380px;
+    // background-image: url("https://cdn.startupsavant.com/images/startup-culture/women-in-business/resources-subindex.jpg");
+    background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/68f61ecd28af58ac8088fdfb/fsd-min.jpg");
+    background-size: cover;
+}
+.business{
+    width: 660px;
+    height: 630px;
+    margin-left: 865px;
+    margin-top: -235px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 30% 30% 35%;
+    .essentials, .finance, .society{
+        color:rgb(66,84,101);
+        margin: 0px 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px dashed black;
+        align-self: center;
+    }
+}
+.last{
+    margin-left:1350px;
+    margin-top: 30px;
+    p{
+        font-size: 20px;
+        font-weight: 350;
+        display: inline;
+        &:nth-child(2){
+            text-decoration: underline;
+        }
+    }
+}
+.footer{
+    background-color: rgb(51,51,51);
+    width: 100%;
+    height: 250px;
+    margin-top: -200px;
+    color: white;
+    text-align: center;
+    p{
+        padding-top: 50px;
+    }
+    .link{
+        margin-top: 80px;
+        a{
+            color: skyblue;
+        }
+        font-size: 12px;
+    }
+}

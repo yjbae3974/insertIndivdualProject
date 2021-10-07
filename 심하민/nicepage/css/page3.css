@@ -1,0 +1,156 @@
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f2f2f2;
+  height: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .X {
+  margin-left: 150px;
+}
+
+header a {
+  width: 40px;
+  height: 40px;
+  padding: 0px 5px;
+  padding-top: 20px;
+}
+
+header a:hover {
+  background-color: #cee1f5;
+}
+
+header .left {
+  margin-left: 10px;
+}
+
+.main {
+  width: 100%;
+  height: 1600px;
+  background-color: #e5e5e5;
+  margin-top: 70px;
+}
+
+.nav {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0px;
+}
+
+.nav .logo {
+  margin-left: 300px;
+}
+
+.nav .page {
+  margin-left: 600px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 30px;
+}
+
+.nav a:hover {
+  color: red;
+}
+
+.nav a:nth-child(3) {
+  color: #77aad9;
+}
+
+.stripe {
+  margin-left: 705px;
+  margin-top: 60px;
+  width: 815px;
+  height: 980px;
+  background: repeating-linear-gradient(-45deg, #252058, #252058 5px, #46529800 5px, #46529800 20px);
+}
+
+.women {
+  width: 1077px;
+  height: 720px;
+  margin-top: -920px;
+  margin-left: 380px;
+  background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/68f61ecd28af58ac8088fdfb/fsd-min.jpg");
+  background-size: cover;
+}
+
+.business {
+  width: 660px;
+  height: 630px;
+  margin-left: 865px;
+  margin-top: -235px;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30% 30% 35%;
+      grid-template-rows: 30% 30% 35%;
+}
+
+.business .essentials, .business .finance, .business .society {
+  color: #425465;
+  margin: 0px 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.last {
+  margin-left: 1350px;
+  margin-top: 30px;
+}
+
+.last p {
+  font-size: 20px;
+  font-weight: 350;
+  display: inline;
+}
+
+.last p:nth-child(2) {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #333333;
+  width: 100%;
+  height: 250px;
+  margin-top: -200px;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  padding-top: 50px;
+}
+
+.footer .link {
+  margin-top: 80px;
+  font-size: 12px;
+}
+
+.footer .link a {
+  color: skyblue;
+}
+/*# sourceMappingURL=page3.css.map */

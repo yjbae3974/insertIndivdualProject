@@ -1,0 +1,188 @@
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f2f2f2;
+  height: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .X {
+  margin-left: 150px;
+}
+
+header a {
+  width: 40px;
+  height: 40px;
+  padding: 0px 5px;
+  padding-top: 20px;
+}
+
+header a:hover {
+  background-color: #cee1f5;
+}
+
+header .left {
+  margin-left: 10px;
+}
+
+.main {
+  width: 100%;
+  height: 1300px;
+  background-color: #e9f2fa;
+  margin-top: 70px;
+}
+
+.nav {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0px;
+}
+
+.nav .logo {
+  margin-left: 300px;
+}
+
+.nav .page {
+  margin-left: 600px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 30px;
+}
+
+.nav a:hover {
+  color: red;
+}
+
+.nav a:nth-child(4) {
+  color: #77aad9;
+}
+
+.grid {
+  width: 580px;
+  height: 700px;
+  margin-left: 380px;
+  margin-top: 65px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  gap: 3%;
+}
+
+.grid .num {
+  text-align: center;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid .num h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 65px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.grid .num a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #478ac9;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.grid .num p {
+  padding: 5px 35px;
+  line-height: 25px;
+}
+
+.sofa {
+  background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/389d13e30ffb5b11979b226b/fddg-min.jpg");
+  width: 960px;
+  height: 625px;
+  background-size: cover;
+  margin-left: 520px;
+  margin-top: -465px;
+}
+
+.shape {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(233, 242, 250, 0.5)), to(rgba(233, 242, 250, 0.5))), url("https://ausit.org/wp-content/uploads/2020/02/d-translator-blue-shape.svg");
+  background-image: linear-gradient(rgba(233, 242, 250, 0.5), rgba(233, 242, 250, 0.5)), url("https://ausit.org/wp-content/uploads/2020/02/d-translator-blue-shape.svg");
+  width: 830px;
+  height: 550px;
+  background-size: cover;
+  margin-top: -600px;
+  margin-left: 750px;
+}
+
+.last {
+  margin-left: 380px;
+  margin-top: 65px;
+}
+
+.last p {
+  font-size: 18px;
+  font-weight: 400;
+  word-spacing: -1px;
+  display: inline;
+}
+
+.last p:nth-child(2) {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #333333;
+  width: 100%;
+  height: 250px;
+  margin-top: -200px;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  padding-top: 50px;
+}
+
+.footer .link {
+  margin-top: 80px;
+  font-size: 12px;
+}
+
+.footer .link a {
+  color: skyblue;
+}
+/*# sourceMappingURL=page4.css.map */
