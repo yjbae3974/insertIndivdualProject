@@ -19,88 +19,132 @@ body{
             object-fit: cover;
             margin:0px;
             font-size: 450px;
-            color:white;
-            opacity: 0.2;
+            color:$white;
+            opacity: 0.3;
         }
-        .all{
-            position:absolute;
-            top: 230px;
-            left: 38%;
-            font-size: 150px;
-            transform: rotate(1.5deg);
-            color: white;
-            font-family: 'Alfa Slab One', cursive;
+        .text1{
+            font-family: 'ChunkFive', sans-serif;
+            color: $white;
             text-transform: uppercase;
-            opacity: 0.7;
-            letter-spacing: 10px;
-            text-shadow: 4px 4px rgb(181,193,184);
+            .all{
+                position:absolute;
+                top: 230px;
+                left: 38%;
+                font-size: 180px;
+                transform: rotate(1.5deg);
+                font-family: 'ChunkFive', sans-serif;
+                letter-spacing: 10px;
+                text-shadow: 4px 4px rgb(181,193,184);
+            }
+            .human{
+                position:absolute;
+                top: 390px;
+                left: 38%;
+                font-size: 45px;
+                text-shadow: 2px 5px rgb(181,193,184);
+            }
+            .free{
+                position:absolute;
+                top: 410px;
+                left: 38%;
+                font-size: 145px;
+                text-shadow: 5px 5px rgb(181,193,184);
+            }
         }
-        .human{
-            position:absolute;
-            top: 390px;
-            left: 38%;
-            font-size: 38px;
-            color: white;
-            font-family: 'Alfa Slab One', cursive;
-            text-transform: uppercase;
-            opacity: 0.7;
-            text-shadow: 4px 4px rgb(181,193,184);
+        .about, .follow{
+            background-color: white;
+            position: absolute;
+            right: 26%;
+            font-family: 'ChunkFive', sans-serif;
+            color:rgb(195,209,203);
+            padding: 3px 5px;
+            font-size: 13px;
+            transform: rotate(-0.2deg);
+            box-shadow: 2px 2px 1px rgb(184, 182, 182);
+        }
+        .about{
+            top: 220px;
+        }
+        .follow{
+            top: 255px;
         }
         .born{
             writing-mode:vertical-lr;
             transform: rotate(180deg);
             position:absolute;
-            top: 460px;
-            left: 38.8%;
-            font-size: 14px;
-            color: rgb(199,209,201);
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            top: 455px;
+            left: 39%;
+            font-size: 13px;
+            font-weight: 400;
+            color: rgb(195,209,203);
+            font-family: 'Goudy Old Style', sans-serif;
             font-weight: 100;
             text-transform: uppercase;
             z-index: 30;
-            word-spacing: 0px;
         }
-        .free{
-            position:absolute;
-            top: 410px;
-            left: 38%;
-            font-size: 120px;
-            color: white;
-            font-family: 'Alfa Slab One', cursive;
-            text-transform: uppercase;
-            opacity: 0.7;
-            text-shadow: 8px 8px rgb(181,193,184);
-        }
-        .box_up{
+        .box_up, .box_down{
             position: absolute;
+            left: 47%;
             transform: rotate(-0.2deg);
-            top: 550px;
-            left: 45%;
             width: 220px;
             height: 55px;
-            background-color: rgb(237,242,238);
-            opacity: 0.9;
+            background-color: $white;
             box-shadow: 3px 3px rgb(181,193,184) ;
+        }
+        .box_up{
+            top: 557px;
         }
         .equal{
             position: absolute;
-            top: 610px;
-            left: 48%;
+            top: 620px;
+            left: 50%;
             color:rgb(237,242,238);
-            font-size: 18px;
+            font-size: 16px;
             font-family: 'Alfa Slab One', cursive;
         }
         .box_down{
-            position: absolute;
-            transform: rotate(-0.5deg);
-            top: 645px;
-            left: 45%;
-            width: 220px;
-            height: 55px;
-            background-color: rgb(237,242,238);
-            opacity: 0.9;
-            box-shadow: 3px 3px rgb(181,193,184) ;
+            top: 650px;
         }
-        
+        .amp{
+            font-family: 'Playfair Display', serif;
+            font-size: 200px;
+            color:$white;
+            position:absolute;
+            top: 520px;
+            left: 36%;
+        }
+        .dignity{
+            font-size: 30px;
+            position: absolute;
+            top: 710px;
+            left: 38%;
+            text-shadow: 2px 7px rgb(181,193,184);
+            transform: rotate(-1.5deg);
+            z-index: 100;
+            background-color: rgb(195,209,203);
+            padding-left: 2px;
+        }
+        .paragraph{
+            position: absolute;
+            top: 750px;
+            left: 38%;
+            width: 9%;
+            font-size: 4px;
+            transform: rotate(-1.5deg);
+            text-align: justify;
+        }
+        .brother{
+            color:rgb(195,209,203);
+            background-color: $white;
+            position: absolute;
+            top: 750px;
+            left: 47.5%;
+            transform: rotate(-1deg);
+            width: 11%;
+            text-align: center;
+            font-size: 25px;
+            padding: 2px 0px;
+            box-shadow: 5px 5px rgb(181,193,184);
+        }
     }
 }
