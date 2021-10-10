@@ -22,35 +22,64 @@ body .main .sun {
      object-fit: cover;
   margin: 0px;
   font-size: 450px;
-  color: white;
-  opacity: 0.2;
+  color: #edf2ee;
+  opacity: 0.3;
 }
 
-body .main .all {
+body .main .text1 {
+  font-family: 'ChunkFive', sans-serif;
+  color: #edf2ee;
+  text-transform: uppercase;
+}
+
+body .main .text1 .all {
   position: absolute;
   top: 230px;
   left: 38%;
-  font-size: 150px;
+  font-size: 180px;
   -webkit-transform: rotate(1.5deg);
           transform: rotate(1.5deg);
-  color: white;
-  font-family: 'Alfa Slab One', cursive;
-  text-transform: uppercase;
-  opacity: 0.7;
+  font-family: 'ChunkFive', sans-serif;
   letter-spacing: 10px;
   text-shadow: 4px 4px #b5c1b8;
 }
 
-body .main .human {
+body .main .text1 .human {
   position: absolute;
   top: 390px;
   left: 38%;
-  font-size: 38px;
-  color: white;
-  font-family: 'Alfa Slab One', cursive;
-  text-transform: uppercase;
-  opacity: 0.7;
-  text-shadow: 4px 4px #b5c1b8;
+  font-size: 45px;
+  text-shadow: 2px 5px #b5c1b8;
+}
+
+body .main .text1 .free {
+  position: absolute;
+  top: 410px;
+  left: 38%;
+  font-size: 145px;
+  text-shadow: 5px 5px #b5c1b8;
+}
+
+body .main .about, body .main .follow {
+  background-color: white;
+  position: absolute;
+  right: 26%;
+  font-family: 'ChunkFive', sans-serif;
+  color: #c3d1cb;
+  padding: 3px 5px;
+  font-size: 13px;
+  -webkit-transform: rotate(-0.2deg);
+          transform: rotate(-0.2deg);
+  -webkit-box-shadow: 2px 2px 1px #b8b6b6;
+          box-shadow: 2px 2px 1px #b8b6b6;
+}
+
+body .main .about {
+  top: 220px;
+}
+
+body .main .follow {
+  top: 255px;
 }
 
 body .main .born {
@@ -60,63 +89,92 @@ body .main .born {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   position: absolute;
-  top: 460px;
-  left: 38.8%;
-  font-size: 14px;
-  color: #c7d1c9;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  top: 455px;
+  left: 39%;
+  font-size: 13px;
+  font-weight: 400;
+  color: #c3d1cb;
+  font-family: 'Goudy Old Style', sans-serif;
   font-weight: 100;
   text-transform: uppercase;
   z-index: 30;
-  word-spacing: 0px;
 }
 
-body .main .free {
+body .main .box_up, body .main .box_down {
   position: absolute;
-  top: 410px;
-  left: 38%;
-  font-size: 120px;
-  color: white;
-  font-family: 'Alfa Slab One', cursive;
-  text-transform: uppercase;
-  opacity: 0.7;
-  text-shadow: 8px 8px #b5c1b8;
-}
-
-body .main .box_up {
-  position: absolute;
+  left: 47%;
   -webkit-transform: rotate(-0.2deg);
           transform: rotate(-0.2deg);
-  top: 550px;
-  left: 45%;
   width: 220px;
   height: 55px;
   background-color: #edf2ee;
-  opacity: 0.9;
   -webkit-box-shadow: 3px 3px #b5c1b8;
           box-shadow: 3px 3px #b5c1b8;
+}
+
+body .main .box_up {
+  top: 557px;
 }
 
 body .main .equal {
   position: absolute;
-  top: 610px;
-  left: 48%;
+  top: 620px;
+  left: 50%;
   color: #edf2ee;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Alfa Slab One', cursive;
 }
 
 body .main .box_down {
+  top: 650px;
+}
+
+body .main .amp {
+  font-family: 'Playfair Display', serif;
+  font-size: 200px;
+  color: #edf2ee;
   position: absolute;
-  -webkit-transform: rotate(-0.5deg);
-          transform: rotate(-0.5deg);
-  top: 645px;
-  left: 45%;
-  width: 220px;
-  height: 55px;
+  top: 520px;
+  left: 36%;
+}
+
+body .main .dignity {
+  font-size: 30px;
+  position: absolute;
+  top: 710px;
+  left: 38%;
+  text-shadow: 2px 7px #b5c1b8;
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+  z-index: 100;
+  background-color: #c3d1cb;
+  padding-left: 2px;
+}
+
+body .main .paragraph {
+  position: absolute;
+  top: 750px;
+  left: 38%;
+  width: 9%;
+  font-size: 4px;
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+  text-align: justify;
+}
+
+body .main .brother {
+  color: #c3d1cb;
   background-color: #edf2ee;
-  opacity: 0.9;
-  -webkit-box-shadow: 3px 3px #b5c1b8;
-          box-shadow: 3px 3px #b5c1b8;
+  position: absolute;
+  top: 750px;
+  left: 47.5%;
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+  width: 11%;
+  text-align: center;
+  font-size: 25px;
+  padding: 2px 0px;
+  -webkit-box-shadow: 5px 5px #b5c1b8;
+          box-shadow: 5px 5px #b5c1b8;
 }
 /*# sourceMappingURL=style.css.map */

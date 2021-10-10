@@ -1,0 +1,157 @@
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f2f2f2;
+  height: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .X {
+  margin-left: 150px;
+}
+
+header a {
+  width: 40px;
+  height: 40px;
+  padding: 0px 5px;
+  padding-top: 20px;
+}
+
+header a:hover {
+  background-color: #cee1f5;
+}
+
+header .left {
+  margin-left: 10px;
+}
+
+.main {
+  width: 100%;
+  height: 1300px;
+  background-color: #77aad9;
+  margin-top: 70px;
+}
+
+.nav {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0px;
+}
+
+.nav .logo {
+  margin-left: 300px;
+}
+
+.nav .page {
+  margin-left: 600px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 30px;
+}
+
+.nav a:hover {
+  color: red;
+}
+
+.nav a:nth-child(1) {
+  color: #77aad9;
+}
+
+.big {
+  width: 100%;
+  height: 1200px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("https://image.freepik.com/free-photo/lush-green-landscape_1353-191.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://image.freepik.com/free-photo/lush-green-landscape_1353-191.jpg");
+  background-size: cover;
+}
+
+.big .left {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Acme', sans-serif;
+  word-spacing: 8px;
+  font-size: 60px;
+  font-weight: 900;
+  padding-top: 550px;
+  padding-left: 400px;
+}
+
+.big .right {
+  color: white;
+  width: 500px;
+  height: 220px;
+  margin-left: 1000px;
+  margin-top: -170px;
+  padding-top: 10px;
+}
+
+.big .right h3, .big .right p {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.big .right p {
+  display: inline;
+}
+
+.big .right p:nth-child(2) {
+  text-decoration: underline;
+}
+
+.big .right .sns {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  margin-top: 25px;
+  width: 100%;
+}
+
+.big .right .sns img {
+  margin-left: 20px;
+  width: 6%;
+}
+
+.footer {
+  background-color: #333333;
+  width: 100%;
+  height: 250px;
+  margin-top: -200px;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  padding-top: 50px;
+}
+
+.footer .link {
+  margin-top: 80px;
+  font-size: 12px;
+}
+
+.footer .link a {
+  color: skyblue;
+}
+/*# sourceMappingURL=page1.css.map */
